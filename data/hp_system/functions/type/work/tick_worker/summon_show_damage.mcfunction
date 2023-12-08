@@ -1,0 +1,2 @@
+#Made By Fan_Fan_tom
+$summon text_display ^ ^0.3 ^0.1 {teleport_duration:1,billboard:"center",Tags:["damage"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2f,2f,2f]},text:'{"text":"§c§l$(damage)"}'}
