@@ -3,7 +3,14 @@
 #玩家編號ID
 execute as @a unless score @s playerID matches -2147483648..2147483647 run function hp_system:type/work/player_id
 
+#looking system
+execute as @a at @s run tag @e[type=!#hp_system:nothing,distance=..3.3] add find_looking.candidate
+execute as @a at @s run function find_looking:find
+tag @e[type=!#hp_system:nothing,tag=find_looking.candidate] remove find_looking.candidate
 
+#擊中生物數量
+execute as @e[type=!#hp_system:nothing,nbt={HurtTime:10s}] at @s on attacker run scoreboard players add @s hit_amount 1
+execute as @a if score @s hit_amount matches 1.. run title @s actionbar ["",{"text":"hit amount : "},{"score":{"name":"@s","objective":"hit_amount"},"bold":true,"underlined":true,"color":"gold"}]
 
 #怪物需要的運作
 #自訂傷害 / 傷害顯示 (for 一般怪物) / 怪物特殊技能
@@ -23,6 +30,6 @@ kill @e[type=text_display,tag=damage,scores={command_timer=20..}]
 
 #Reset
 scoreboard players reset @a[scores={playerAttackDmg=1..}] playerAttackDmg
-
+scoreboard players reset @a[scores={hit_amount=1..}] hit_amount
 #Loop
 schedule function hp_system:type/tick 1t

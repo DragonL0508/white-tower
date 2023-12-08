@@ -19,4 +19,7 @@ scoreboard objectives add tmp_maxhp dummy "暫存最大血量"
 scoreboard objectives add tmp_hp dummy "暫存血量"
 
 
+scoreboard objectives add hit_amount dummy "擊中數量"
+
+
 function hp_system:type/tick

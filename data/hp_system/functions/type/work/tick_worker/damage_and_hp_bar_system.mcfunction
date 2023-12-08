@@ -1,10 +1,18 @@
 #Made By Fan_Fan_tom
 
-execute if entity @s[nbt={HurtTime:10s}] on attacker run scoreboard players operation @e[type=!#hp_system:nothing,sort=nearest,limit=1] lastAttackerID = @s playerID
+#紀錄誰最後攻擊怪物
+execute if entity @s[nbt={HurtTime:10s}] on attacker run tag @s add Fan.tmpAtker
+execute if entity @s[nbt={HurtTime:10s}] run scoreboard players operation @s lastAttackerID = @p[tag=Fan.tmpAtker] playerID
 
+#execute if entity @s[nbt={HurtTime:10s}] run scoreboard players add @p[tag=Fan.tmpAtker] hit_amount 1
 
 #物理傷害 (紅色)
 execute store result score @s[nbt={HurtTime:10s}] damage on attacker run scoreboard players get @s playerAttackDmg
+
+#execute if entity @s[tag=find_looking.result,nbt={HurtTime:10s}] run scoreboard players operation @s damage /= @p[tag=Fan.tmpAtker] hit_amount
+execute if entity @s[tag=!find_looking.result,nbt={HurtTime:10s}] run scoreboard players operation tmp hit_amount = @p[tag=Fan.tmpAtker] hit_amount
+#execute if entity @s[tag=!find_looking.result,nbt={HurtTime:10s}] run scoreboard players add tmp hit_amount 1
+execute if entity @s[tag=!find_looking.result,nbt={HurtTime:10s}] run scoreboard players operation @s damage /= tmp hit_amount
 execute if score @s damage matches 1.. run function hp_system:type/work/tick_worker/damage/normal
 
 #自訂傷害 (技能)
@@ -22,3 +30,6 @@ execute if score @s hp matches ..0 run function hp_system:type/work/tick_worker/
 #給予無敵計算正確數值傷害
 effect give @s resistance infinite 4 true
 
+#reset tag
+execute if entity @s[nbt={HurtTime:10s}] on attacker run tag @s remove Fan.tmpAtker
+scoreboard players reset tmp hit_amount
