@@ -1,0 +1,56 @@
+{
+  "parent": "quest:demo/mysterious_stone/endsky",
+  "criteria": {
+    "check": {
+      "trigger": "minecraft:effects_changed",
+      "conditions": {
+        "effects": {
+          "minecraft:unluck": {
+            "amplifier": 0,
+            "visible": false
+          }
+        },
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "score": "quest.state",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "$demo.mysterious_stone"
+              }
+            },
+            "range": 5
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "item": "minecraft:stone",
+      "nbt": "{Enchantments:[{}]}"
+    },
+    "title": "神奇石頭搬運工-任務結束",
+    "description": {
+      "color": "gold",
+      "text": "收音機器人終於拿到了神奇石頭，可喜可賀!\n",
+      "extra": [
+        {
+          "color": "gray",
+          "text": "獎勵: 沒那麼神奇的石頭 x64\n"
+        },
+        {
+          "color": "dark_gray",
+          "italic": true,
+          "text": "這個任務獎勵...是認真的嗎?"
+        }
+      ]
+    },
+    "announce_to_chat": false,
+    "frame": "challenge",
+    "hidden": true,
+    "show_toast": true
+  }
+}

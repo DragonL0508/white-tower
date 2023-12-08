@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type":"minecraft:item",
+          "name": "minecraft:diamond",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "color": "aqua",
+                "italic": false,
+                "text": "測試用貨幣"
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "color": "gray",
+                  "text": "系統測試時使用的貨幣"
+                },
+                {
+                  "color": "gray",
+                  "text": "據某人說這貨幣一枚便擁有新台幣一千元的價值"
+                },
+                {
+                  "color": "gray",
+                  "text": "但那其實是騙人的"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{demo_currency:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

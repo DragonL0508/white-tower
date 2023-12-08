@@ -1,0 +1,25 @@
+[
+  {
+    "condition": "minecraft:entity_properties",
+    "predicate": {
+      "type_specific": {
+        "type": "player",
+        "looking_at": {
+          "type": "minecraft:villager",
+          "nbt": "{Tags:[\"npc.trader_s\",\"npc.this\"]}"
+        }
+      }
+    },
+    "entity": "this"
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:entity_scores",
+      "scores": {
+        "npc.look_option": 2
+      },
+      "entity": "this"
+    }
+  }
+]

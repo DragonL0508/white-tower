@@ -1,0 +1,53 @@
+{
+  "parent": "quest:demo/mysterious_stone/start",
+  "criteria": {
+    "check": {
+      "trigger": "minecraft:effects_changed",
+      "conditions": {
+        "effects": {
+          "minecraft:unluck": {
+            "amplifier": 0,
+            "visible": false
+          }
+        },
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "score": "quest.state",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "$demo.mysterious_stone"
+              }
+            },
+            "range": {
+              "min": 3
+            }
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "item": "minecraft:player_head",
+      "nbt": "{SkullOwner:\"SuehiroTaihoku\"}"
+    },
+    "title": "神奇石頭搬運工-任務過程",
+    "description": {
+      "color": "gold",
+      "text": "這個傢伙好奇怪\n",
+      "extra": [
+        {
+          "color": "gray",
+          "text": "提示:將神奇石頭交給測試測試收音機"
+        }
+      ]
+    },
+    "announce_to_chat": false,
+    "frame": "task",
+    "hidden": true,
+    "show_toast": true
+  }
+}

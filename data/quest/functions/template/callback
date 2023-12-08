@@ -1,0 +1,13 @@
+# 更新任務狀態記分板數字
+scoreboard players set $<region_id>.<quest_id> quest.state 
+
+# 若有更新任務狀態記分板，應加入此兩行方便同步離線玩家的任務提示
+scoreboard players add $system quest.version 1
+scoreboard players operation @a quest.version = $system quest.version
+
+# 給予或清除道具
+#give @s ...
+#clear @s ...
+
+# 給予任務提示
+advancement grant @a only quest:<region_id>/<quest_id>/hint

@@ -1,0 +1,53 @@
+{
+  "parent": "quest:demo/root",
+  "criteria": {
+    "check": {
+      "trigger": "minecraft:effects_changed",
+      "conditions": {
+        "effects": {
+          "minecraft:unluck": {
+            "amplifier": 0,
+            "visible": false
+          }
+        },
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "score": "quest.state",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "$demo.mysterious_stone"
+              }
+            },
+            "range": {
+              "min": 2
+            }
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "item": "minecraft:player_head",
+      "nbt": "{SkullOwner:\"Blue_Radio\"}"
+    },
+    "title": "神奇石頭搬運工-任務開始",
+    "description": {
+      "color": "gold",
+      "text": "神奇石頭到底為什麼那麼重要呢\n",
+      "extra": [
+        {
+          "color": "gray",
+          "text": "提示:跟測試用末天機器人詢問有關神奇石頭的事情"
+        }
+      ]
+    },
+    "announce_to_chat": false,
+    "frame": "goal",
+    "hidden": true,
+    "show_toast": true
+  }
+}

@@ -1,0 +1,24 @@
+{
+    "condition": "minecraft:entity_scores",
+    "scores": {
+      "npc.split": {
+        "max": {
+          "type": "minecraft:score",
+          "score": "npc.split",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "$current"
+          }
+        },
+        "min": {
+          "type": "minecraft:score",
+          "score": "npc.split",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "$current"
+          }
+        }
+      }
+    },
+    "entity": "this"
+}

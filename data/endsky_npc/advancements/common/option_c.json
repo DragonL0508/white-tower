@@ -1,0 +1,42 @@
+{
+  "rewards": {
+    "function": "endsky_npc:common/option/c"
+  },
+  "criteria": {
+    "interacted": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"npc.option_c\"]}"
+            },
+            "entity": "this"
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_properties",
+              "predicate": {
+                "type": "minecraft:interaction",
+                "nbt": "{Tags:[\"npc.invalid\"]}"
+              },
+              "entity": "this"
+            }
+          }
+        ],
+        "player": [
+          {
+            "condition": "minecraft:entity_scores",
+            "scores": {
+              "npc.state": 2
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "rewards": {
+    "function": "npc:<region_id>/<npc_id>/next"
+  },
+  "criteria": {
+    "interacted": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"npc.<region_id>.<npc_id>\"]}"
+            },
+            "entity": "this"
+          },
+          {
+            "condition": "minecraft:entity_scores",
+            "scores": {
+              "npc.occupied": 1
+            },
+            "entity": "this"
+          }
+        ],
+        "player": [
+          {
+            "condition": "minecraft:entity_scores",
+            "scores": {
+              "npc.state": 1
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    }
+  }
+}

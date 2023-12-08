@@ -1,0 +1,53 @@
+{
+  "parent": "quest:demo/root",
+  "criteria": {
+    "check": {
+      "trigger": "minecraft:effects_changed",
+      "conditions": {
+        "effects": {
+          "minecraft:unluck": {
+            "amplifier": 0,
+            "visible": false
+          }
+        },
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "score": "quest.state",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "$demo.sus_mysterious_stone"
+              }
+            },
+            "range": {
+              "min": 2
+            }
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "item": "minecraft:player_head",
+      "nbt": "{SkullOwner:\"LeekOWO\"}"
+    },
+    "title": "天天採購-任務開始",
+    "description": {
+      "color": "gold",
+      "text": "神奇但不神奇的石頭?真是奇怪的名字\n",
+      "extra": [
+        {
+          "color": "gray",
+          "text": "提示:天天需要三個這種石頭"
+        }
+      ]
+    },
+    "announce_to_chat": false,
+    "frame": "goal",
+    "hidden": true,
+    "show_toast": true
+  }
+}

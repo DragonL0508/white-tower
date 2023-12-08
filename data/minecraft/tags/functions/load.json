@@ -1,5 +1,6 @@
 {
     "values": [
-        "system:load"
+        "system:load",
+        "endsky_npc:load"
     ]
 }

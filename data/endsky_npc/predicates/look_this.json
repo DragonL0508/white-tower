@@ -1,0 +1,12 @@
+{
+  "condition": "minecraft:entity_properties",
+  "predicate": {
+    "type_specific": {
+      "type": "player",
+      "looking_at": {
+        "nbt": "{Tags:[\"npc.this\"]}"
+      }
+    }
+  },
+  "entity": "this"
+}

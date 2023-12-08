@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type":"minecraft:item",
+          "name": "minecraft:stone",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "color": "gold",
+                "italic": false,
+                "text": "神奇石頭"
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "color": "gray",
+                  "text": "某種神奇的石頭"
+                },
+                {
+                  "color": "gray",
+                  "text": "或許有驚為天人的用途"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{mysterious_stone:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

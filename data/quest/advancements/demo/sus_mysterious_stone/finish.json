@@ -1,0 +1,56 @@
+{
+  "parent": "quest:demo/sus_mysterious_stone/start",
+  "criteria": {
+    "check": {
+      "trigger": "minecraft:effects_changed",
+      "conditions": {
+        "effects": {
+          "minecraft:unluck": {
+            "amplifier": 0,
+            "visible": false
+          }
+        },
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "score": "quest.state",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "$demo.sus_mysterious_stone"
+              }
+            },
+            "range": 4
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "item": "minecraft:stone",
+      "nbt": "{Enchantments:[{}]}"
+    },
+    "title": "天天採購-任務結束",
+    "description": {
+      "color": "gold",
+      "text": "天天拿到了神奇又不神奇的石頭!\n",
+      "extra": [
+        {
+          "color": "gray",
+          "text": "獎勵: 測試用貨幣 x6\n"
+        },
+        {
+          "color": "dark_gray",
+          "italic": true,
+          "text": "但是爆肝的問題還是沒有解決"
+        }
+      ]
+    },
+    "announce_to_chat": false,
+    "frame": "challenge",
+    "hidden": true,
+    "show_toast": true
+  }
+}

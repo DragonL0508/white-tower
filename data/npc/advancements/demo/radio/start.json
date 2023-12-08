@@ -1,0 +1,38 @@
+{
+  "rewards": {
+    "function": "npc:demo/radio/start"
+  },
+  "criteria": {
+    "interacted": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"npc.demo.radio\"]}"
+            },
+            "entity": "this"
+          },
+          {
+            "condition": "minecraft:entity_scores",
+            "scores": {
+              "npc.occupied": 0
+            },
+            "entity": "this"
+          }
+        ],
+        "player": [
+          {
+            "condition": "minecraft:entity_scores",
+            "scores": {
+              "npc.state": 0
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    }
+  }
+}

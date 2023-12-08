@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "demo": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "icon": {
+      "item": "minecraft:stone"
+    },
+    "title": "展示測試用任務進度表",
+    "description": "一切任務的開發都是從這裡開始的",
+    "announce_to_chat": false,
+    "frame": "task",
+    "hidden": false,
+    "show_toast": false,
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+  }
+}

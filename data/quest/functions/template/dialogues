@@ -1,0 +1,20 @@
+data remove storage quest:<region_id> <quest_id>
+
+# 階段為1時，由 "A" 觸發，選擇選項1後將階段設為2 (Start即為此處的dialogue_name)
+data modify storage quest:<region_id> <quest_id>.Start set value {Texts:[...],Options:[{Option:'{"text":"接受任務"}',React:[...],Extra:{EndCommand:"function quest:<region_id>/<quest_id>/start"}},{Option:'{"text":"拒絕任務"}',React:[...]}],Quest:1b}
+
+# 階段為2時，由 "A" 觸發
+data modify storage quest:<region_id> <quest_id>.Start_Remind set value {Texts:[...]}
+
+# 階段為2時，由 "B" 觸發，結束後將階段設為3，並給予道具
+data modify storage quest:<region_id> <quest_id>.Ask set value {Texts:[...],Extra:{EndCommand:"function quest:<region_id>/<quest_id>/give"}}
+
+# 階段為3時，由 "B" 觸發
+data modify storage quest:<region_id> <quest_id>.Ask_Remind set value {Texts:[...]}
+
+# 階段為3時，由 "A" 觸發`，玩家選擇是否提交任務道具，若選是且玩家持有該道具，收走指定道具，將階段設為4，結束時給予獎勵道具並將階段設為5
+# 此處使用Options中的Condition偵測玩家背包中的物品，若無指定物品，該選項將無法被選擇
+data modify storage quest:<region_id> <quest_id>.Turn_In set value {Texts:[...],Options:[{Option:'{"text":"交出道具"}',React:[...],Condition:{Item:{...}},Extra:{StartCommand:"function quest:<region_id>/<quest_id>/take",EndCommand:"function quest:<region_id>/<quest_id>/finish"}},{Option:'{"text":"暫時不交出道具"}',React:[...]}],Quest:1b}
+
+# 若玩家於道具被收走後因故中斷了對話，階段將會停留在4。而階段為4時，將由 "A" 觸發此對話，補發獎勵道具，並將階段設為5
+data modify storage quest:<region_id> <quest_id>.Reward set value {Texts:[...],Extra:{StartCommand:"function quest:<region_id>/<quest_id>/finish"}}

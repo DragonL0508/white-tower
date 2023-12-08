@@ -1,0 +1,25 @@
+[
+  {
+    "condition": "minecraft:entity_properties",
+    "predicate": {
+      "type_specific": {
+        "type": "player",
+        "looking_at": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"npc.option_e\",\"npc.this\"]}"
+        }
+      }
+    },
+    "entity": "this"
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:entity_scores",
+      "scores": {
+        "npc.look_option": 5
+      },
+      "entity": "this"
+    }
+  }
+]

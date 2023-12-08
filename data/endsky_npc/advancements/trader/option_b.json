@@ -1,0 +1,16 @@
+{
+  "rewards": {
+    "function": "endsky_npc:trader/option/b"
+  },
+  "criteria": {
+    "interacted": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:villager",
+          "nbt": "{Tags:[\"npc.trader_b\"]}"
+        }
+      }
+    }
+  }
+}

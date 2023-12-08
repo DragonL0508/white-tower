@@ -1,0 +1,10 @@
+{
+  "condition": "minecraft:entity_properties",
+  "predicate": {
+    "vehicle": {
+      "type": "minecraft:villager",
+      "nbt": "{Tags:[\"npc.option\"]}"
+    }
+  },
+  "entity": "this"
+}

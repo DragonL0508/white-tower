@@ -1,0 +1,25 @@
+{
+  "rewards": {
+    "function": "endsky_npc:trader/option/e"
+  },
+  "criteria": {
+    "interacted": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"npc.trader_e\"]}"
+        },
+        "player": [
+          {
+            "condition": "minecraft:entity_scores",
+            "scores": {
+              "npc.state": 3
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    }
+  }
+}

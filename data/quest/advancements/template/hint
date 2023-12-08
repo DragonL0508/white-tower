@@ -1,0 +1,47 @@
+{
+  "parent": "quest:<region_id>/<quest_id>/prev_hint",
+  "criteria": {
+    "check": {
+      "trigger": "minecraft:effects_changed", // 這個trigger是為了在任務進度更新時不在線上的玩家所設計的，只要玩家一上線便會觸發
+      "conditions": {
+        "effects": {
+          "minecraft:unluck": {
+            "amplifier": 0,
+            "visible": false
+          }
+        },
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "score": "quest.state",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "$<region_id>.<quest_id>"
+              }
+            },
+            "range": {
+              "min": (此處填入任務進度的分數)
+            }
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "item": "minecraft:"
+    },
+    "title": "",
+    "description": {
+      "color": "gold",
+      "text": "",
+      "extra": []
+    },
+    "announce_to_chat": false,
+    "frame": "goal",
+    "hidden": true,
+    "show_toast": true
+  }
+}
