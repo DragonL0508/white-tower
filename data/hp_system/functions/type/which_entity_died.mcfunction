@@ -2,7 +2,7 @@
 #===============================================
 #抓取哪個實體死亡 可以在kill發生前執行需要的動作
 #===============================================
-execute if entity @s[type=creeper,tag=test] run say test creeper died
+#execute if entity @s[type=creeper,tag=test] run say test creeper died
 
 
 
@@ -25,7 +25,7 @@ execute as @a if score @s playerID = tmp lastAttackerID run tag @s add Fan.lastA
 #運作區
 #在這裡可以寫下要對擊殺怪物者執行的動作
 #=============================================
-say @a[tag=Fan.lastAtk] 殺死我的
+#say @a[tag=Fan.lastAtk] 殺死我的
 
 
 

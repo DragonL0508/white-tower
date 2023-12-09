@@ -10,7 +10,6 @@ tag @e[type=!#hp_system:nothing,tag=find_looking.candidate] remove find_looking.
 
 #擊中生物數量
 execute as @e[type=!#hp_system:nothing,nbt={HurtTime:10s}] at @s on attacker run scoreboard players add @s hit_amount 1
-execute as @a if score @s hit_amount matches 1.. run title @s actionbar ["",{"text":"hit amount : "},{"score":{"name":"@s","objective":"hit_amount"},"bold":true,"underlined":true,"color":"gold"}]
 
 #怪物需要的運作
 #自訂傷害 / 傷害顯示 (for 一般怪物) / 怪物特殊技能

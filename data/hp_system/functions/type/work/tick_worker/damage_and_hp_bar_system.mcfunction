@@ -6,7 +6,6 @@ execute if entity @s[nbt={HurtTime:10s}] run tag @s add Fan.gotHurt
 execute if entity @s[nbt={HurtTime:10s}] on attacker run tag @s add Fan.tmpAtker
 execute if entity @s[nbt={HurtTime:10s}] run scoreboard players operation @s lastAttackerID = @p[tag=Fan.tmpAtker] playerID
 
-#execute if entity @s[nbt={HurtTime:10s}] run scoreboard players add @p[tag=Fan.tmpAtker] hit_amount 1
 
 #存入傷害值
 execute store result score @s[nbt={HurtTime:10s}] damage on attacker run scoreboard players get @s playerAttackDmg
