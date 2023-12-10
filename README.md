@@ -21,7 +21,15 @@
 ==============================================
 
 #DragonL
--
+#必須遵守
+- 玩家在塔外，team會是players
+- 玩家在準備房間，team會是prepared
+- 玩家在關卡內，team會是intower
+- 所有敵人必須加入隊伍hostile
+
+#不一定要遵守，看你方不方便
+- 玩家第一次加入會執行system:players/first_join
+- 每tick讓所有玩家持續執行(execute as @a at @s run)的function是system:players/loop
 
 #LeviChou
 -

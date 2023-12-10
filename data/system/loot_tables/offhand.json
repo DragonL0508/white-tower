@@ -1,0 +1,207 @@
+{
+    "type": "minecraft:generic",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:carrot_on_a_stick",
+            "functions": [
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  [
+                    {
+                      "text": " 等級: ",
+                      "color": "yellow",
+                      "bold": false,
+                      "italic": false
+                    },
+                    {
+                      "score": {
+                        "name": "@s",
+                        "objective": "level"
+                      },
+                      "color": "gray",
+                      "bold": false,
+                      "italic": false
+                    }
+                  ]
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  [
+                    {
+                      "text": " 技能點: ",
+                      "color": "yellow",
+                      "bold": false,
+                      "italic": false
+                    },
+                    {
+                      "score": {
+                        "name": "@s",
+                        "objective": "skill_points"
+                      },
+                      "color": "gray",
+                      "bold": false,
+                      "italic": false
+                    }
+                  ]
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  [
+                    {
+                      "text": "                                 ",
+                      "color": "",
+                      "bold": false,
+                      "italic": false
+                    }
+                  ]
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  [
+                    {
+                      "text": " 運氣: ",
+                      "color": "#A8FFA8",
+                      "bold": false,
+                      "italic": false
+                    },
+                    {
+                      "score": {
+                        "name": "@s",
+                        "objective": "attribute.LUC"
+                      },
+                      "color": "white",
+                      "bold": false,
+                      "italic": false
+                    }
+                  ]
+                ]
+              },{
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  [
+                    {
+                      "text": " 防禦: ",
+                      "color": "gray",
+                      "bold": false,
+                      "italic": false
+                    },
+                    {
+                      "score": {
+                        "name": "@s",
+                        "objective": "attribute.RES"
+                      },
+                      "color": "white",
+                      "bold": false,
+                      "italic": false
+                    }
+                  ]
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  [
+                    {
+                      "text": " 生命: ",
+                      "color": "red",
+                      "bold": false,
+                      "italic": false
+                    },
+                    {
+                      "score": {
+                        "name": "@s",
+                        "objective": "attribute.HP"
+                      },
+                      "color": "white",
+                      "bold": false,
+                      "italic": false
+                    }
+                  ]
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  [
+                    {
+                      "text": " 力量: ",
+                      "color": "#FFD37A",
+                      "bold": false,
+                      "italic": false
+                    },
+                    {
+                      "score": {
+                        "name": "@s",
+                        "objective": "attribute.STR"
+                      },
+                      "color": "white",
+                      "bold": false,
+                      "italic": false
+                    }
+                  ]
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  [
+                    {
+                      "text": " 智力: ",
+                      "color": "#9FFEFE",
+                      "bold": false,
+                      "italic": false
+                    },
+                    {
+                      "score": {
+                        "name": "@s",
+                        "objective": "attribute.INT"
+                      },
+                      "color": "white",
+                      "bold": false,
+                      "italic": false
+                    }
+                  ]
+                ]
+              },
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                  {
+                    "text": "能力資訊 :",
+                    "color": "gold",
+                    "bold": true,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{offhand:1b}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
