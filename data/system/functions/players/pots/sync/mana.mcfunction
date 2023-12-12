@@ -1,0 +1,1 @@
+$item replace entity @s hotbar.8 with minecraft:purple_dye{display:{Name:'[{"text":"","italic":false},{"text":"§b魔力藥水"}]',Lore:['[{"text":"","italic":false},{"text":"飲用後能夠恢復全部魔力值。","color":"gray"}]']},CustomModelData:2,player.pots:1b} $(Mpots_counts)

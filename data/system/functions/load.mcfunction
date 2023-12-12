@@ -9,6 +9,14 @@ scoreboard objectives setdisplay below_name health
 scoreboard objectives add level dummy
 scoreboard objectives add skill_points dummy
 
+scoreboard objectives add Hpots.real dummy
+scoreboard objectives add Mpots.real dummy
+scoreboard objectives add Hpots.counts dummy
+scoreboard objectives add Mpots.counts dummy
+scoreboard objectives add Hpots.max dummy
+scoreboard objectives add Mpots.max dummy
+scoreboard objectives add carrot_on_a_stick.right_click used:carrot_on_a_stick
+
 scoreboard objectives add attribute.STR dummy
 scoreboard objectives add attribute.HP dummy
 scoreboard objectives add attribute.RES dummy
