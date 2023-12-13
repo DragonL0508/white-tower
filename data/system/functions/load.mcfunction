@@ -1,5 +1,5 @@
 tellraw @a {"text": "Loaded 純白之塔資料包."}
-say git test 2
+say git test 3
 
 #create scoreboards
 
