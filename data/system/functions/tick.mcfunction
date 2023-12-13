@@ -9,6 +9,8 @@
     kill @e[type=item,nbt={Item:{tag:{offhand:1b},id:"minecraft:carrot_on_a_stick"}}]
     #pots item
     kill @e[type=item,nbt={Item:{tag:{player.pots:1b}}}]
+    #arrows in ground
+    kill @e[type=arrow,nbt={inGround:1b}]
 
 #effects those always give players
     effect give @a saturation infinite 100 true

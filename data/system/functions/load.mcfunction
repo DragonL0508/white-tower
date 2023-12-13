@@ -3,12 +3,16 @@ say auto pull test
 
 #create scoreboards
 
-scoreboard objectives add money dummy
+scoreboard objectives add money dummy {"text": "玩家金錢"}
 scoreboard objectives setdisplay list money
-scoreboard objectives add health health {"text": "❤","color": "red"}
-scoreboard objectives setdisplay below_name health
-scoreboard objectives add level dummy
-scoreboard objectives add skill_points dummy
+scoreboard objectives add player.health health {"text": "❤","color": "red"}
+scoreboard objectives setdisplay below_name player.health
+scoreboard objectives add player.maxhp dummy
+scoreboard objectives add player.mana dummy
+scoreboard objectives add player.maxmana dummy
+scoreboard objectives add level dummy {"text": "玩家等級"}
+scoreboard objectives add skill_points dummy {"text": "技能點數量"}
+scoreboard objectives add actionbar_type dummy {"text": "玩家actionbar樣式"}
 
 scoreboard objectives add Hpots.real dummy
 scoreboard objectives add Mpots.real dummy
@@ -16,7 +20,7 @@ scoreboard objectives add Hpots.counts dummy
 scoreboard objectives add Mpots.counts dummy
 scoreboard objectives add Hpots.max dummy
 scoreboard objectives add Mpots.max dummy
-scoreboard objectives add carrot_on_a_stick.right_click used:carrot_on_a_stick
+scoreboard objectives add carrot_on_a_stick.right_click used:carrot_on_a_stick {"text": "胡蘿蔔釣竿右鍵"}
 
 scoreboard objectives add attribute.STR dummy
 scoreboard objectives add attribute.HP dummy

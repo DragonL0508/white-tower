@@ -1,4 +1,5 @@
 #execute
+scoreboard players operation @s player.mana = @s player.maxmana
 particle instant_effect ~ ~ ~ 0 0 0 0.1 20 force
 
 #message

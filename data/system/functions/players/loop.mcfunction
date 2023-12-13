@@ -18,8 +18,14 @@
     execute if score @s Mpots.counts matches 0 unless data entity @s Inventory[{Slot:8b,tag:{player.pots:1b},id:"minecraft:glass_bottle"}] run function system:players/pots/sync/start
 
     #use
-    execute if score @s carrot_on_a_stick.right_click matches 1.. if data entity @s SelectedItem{id:"minecraft:purple_dye",tag:{player.pots:1b,CustomModelData:1}} run function system:players/pots/use/heal
-    execute if score @s carrot_on_a_stick.right_click matches 1.. if data entity @s SelectedItem{id:"minecraft:purple_dye",tag:{player.pots:1b,CustomModelData:2}} run function system:players/pots/use/mana
+    execute if score @s carrot_on_a_stick.right_click matches 1.. if data entity @s SelectedItem{id:"minecraft:purple_dye",tag:{player.pots:1b,CustomModelData:1}} if score @s player.health = @s player.maxhp run function system:players/pots/use/hp_is_max
+    execute if score @s carrot_on_a_stick.right_click matches 1.. if data entity @s SelectedItem{id:"minecraft:purple_dye",tag:{player.pots:1b,CustomModelData:2}} if score @s player.mana = @s player.maxmana run function system:players/pots/use/mana_is_max
+    execute if score @s carrot_on_a_stick.right_click matches 1.. if data entity @s SelectedItem{id:"minecraft:purple_dye",tag:{player.pots:1b,CustomModelData:1}} unless score @s player.health = @s player.maxhp run function system:players/pots/use/heal
+    execute if score @s carrot_on_a_stick.right_click matches 1.. if data entity @s SelectedItem{id:"minecraft:purple_dye",tag:{player.pots:1b,CustomModelData:2}} unless score @s player.mana = @s player.maxmana run function system:players/pots/use/mana
+#actionbars
+    execute if score @s actionbar_type matches 1 run function system:players/actionbars/normal
+#attribute
+    execute store result score @s player.maxhp run attribute @s generic.max_health get 1
     
 #scorebaord reset - 重製玩家記分板
     scoreboard players reset @s carrot_on_a_stick.right_click
