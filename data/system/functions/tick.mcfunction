@@ -13,3 +13,4 @@
 #effects those always give players
     effect give @a saturation infinite 100 true
     effect give @a[team=player] resistance infinite 100 true
+    effect give @a[team=player] fire_resistance infinite 100 true

@@ -1,5 +1,7 @@
 #offhand - 玩家副手物品是否正確
     execute unless data entity @s Inventory[{Slot:-106b,id:"minecraft:carrot_on_a_stick",tag:{offhand:1b}}] run function system:players/offhand/not_holding_item
+    #持續更新
+    loot replace entity @s weapon.offhand loot system:offhand
 #pots
     #wrong items
     execute unless data entity @s Inventory[{Slot:7b,tag:{player.pots:1b}}] if data entity @s Inventory[{Slot:7b}] run function system:players/pots/drop_item {slot:7}
