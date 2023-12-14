@@ -1,5 +1,5 @@
 tellraw @a {"text": "Loaded 純白之塔資料包."}
-say auto pull test
+say 只是測試一下git
 
 #create scoreboards
 
