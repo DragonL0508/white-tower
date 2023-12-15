@@ -3,6 +3,7 @@
         "system:load",
         "endsky_npc:load",
         "find_looking:internal/load",
-        "hp_system:type/new"
+        "hp_system:type/new",
+        "enemy:load"
     ]
 }

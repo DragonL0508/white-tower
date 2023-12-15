@@ -1,6 +1,7 @@
 {
     "values": [
         "system:tick",
-        "endsky_npc:tick"
+        "endsky_npc:tick",
+        "enemy:tick"
     ]
 }
