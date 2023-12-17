@@ -1,0 +1,7 @@
+#hit box
+    execute if data entity @s[tag=!ms.holding] SelectedItem{tag:{magic_stick:1b}} run function spell:hitbox_summon
+    #keep hit box inside player's head
+    execute if entity @s[tag=ms.holding] run function spell:interaction
+
+#tag clear
+    execute unless entity @s[tag=ms.holding] run function spell:stop
