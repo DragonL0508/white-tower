@@ -1,2 +1,2 @@
 #interaction
-    execute as @e[type=interaction,tag=spell.hitbox] run function spell:hotbox
+    execute as @e[type=interaction,tag=spell.hitbox] at @s run function spell:hitbox
