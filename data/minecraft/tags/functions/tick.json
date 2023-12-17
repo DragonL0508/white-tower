@@ -2,6 +2,7 @@
     "values": [
         "system:tick",
         "endsky_npc:tick",
-        "enemy:tick"
+        "enemy:tick",
+        "spell:tick"
     ]
 }

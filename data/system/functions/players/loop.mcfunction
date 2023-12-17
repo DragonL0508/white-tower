@@ -6,17 +6,14 @@
     #wrong items
     execute unless data entity @s Inventory[{Slot:7b,tag:{player.pots:1b}}] if data entity @s Inventory[{Slot:7b}] run function system:players/pots/drop_item {slot:7}
     execute unless data entity @s Inventory[{Slot:8b,tag:{player.pots:1b}}] if data entity @s Inventory[{Slot:8b}] run function system:players/pots/drop_item {slot:8}
-
     #sync pots
     execute store result score @s Hpots.real run data get entity @s Inventory[{Slot:7b,id:"minecraft:purple_dye"}].Count
     execute store result score @s Mpots.real run data get entity @s Inventory[{Slot:8b,id:"minecraft:purple_dye"}].Count
     execute if score @s Hpots.counts matches 1.. unless score @s Hpots.real = @s Hpots.counts run function system:players/pots/sync/start
     execute if score @s Mpots.counts matches 1.. unless score @s Mpots.real = @s Mpots.counts run function system:players/pots/sync/start
-
     #glass bottle
     execute if score @s Hpots.counts matches 0 unless data entity @s Inventory[{Slot:7b,tag:{player.pots:1b},id:"minecraft:glass_bottle"}] run function system:players/pots/sync/start
     execute if score @s Mpots.counts matches 0 unless data entity @s Inventory[{Slot:8b,tag:{player.pots:1b},id:"minecraft:glass_bottle"}] run function system:players/pots/sync/start
-
     #use
     execute if score @s carrot_on_a_stick.right_click matches 1.. if data entity @s SelectedItem{id:"minecraft:purple_dye",tag:{player.pots:1b,CustomModelData:1}} if score @s player.health = @s player.maxhp run function system:players/pots/use/hp_is_max
     execute if score @s carrot_on_a_stick.right_click matches 1.. if data entity @s SelectedItem{id:"minecraft:purple_dye",tag:{player.pots:1b,CustomModelData:2}} if score @s player.mana = @s player.maxmana run function system:players/pots/use/mana_is_max
@@ -26,6 +23,7 @@
     execute if score @s actionbar_type matches 1 run function system:players/actionbars/normal
 #attribute
     execute store result score @s player.maxhp run attribute @s generic.max_health get 1
-    
+#spell loop
+    function spell:loop
 #scorebaord reset - 重製玩家記分板
     scoreboard players reset @s carrot_on_a_stick.right_click
