@@ -32,7 +32,7 @@
 - 每tick讓所有玩家持續執行(execute as @a at @s run)的function是system:players/loop
 
 #LeviChou
--
+- 所有敵對生物在出生瞬間就已經加入hostile，不需要再其他函數另外把敵對生物加入隊伍hostile。
 
 #radio0529
 -
