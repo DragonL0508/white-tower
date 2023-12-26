@@ -8,7 +8,7 @@
 
 
 
-summon wolf ~ ~ ~ {id:"minecraft:wolf",Tags:["enemy","enemy.royal"],Health:10f,CustomNameVisible:true,CustomName:'[{"text":"","italic":false},{"text":"聖白獵犬","color": "#FFFFC4","bold": true}]',Attributes:[{Name:"generic.attack_damage",Base:6.0d}],HandItems:[{id:"minecraft:wooden_sword",Count:1b,tag:{CustomModelData:100}},{id:"minecraft:shield",Count:1b,tag:{BlockEntityTag:{Base:0}}}],HandDropChances:[0.0F,0.0F],ArmorItems:[{id:"minecraft:leather_boots",Count:1b,tag:{display:{color:16777215}}},{id:"minecraft:leather_leggings",Count:1b,tag:{display:{color:16777215}}},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:16777215}}},{id:"minecraft:leather_helmet",Count:1b,tag:{display:{color:16777215}}}],ArmorDropChances:[0.0F,0.0F,0.0F,0.0F],PortalCooldown:10,Team:"hostile",DeathLootTable:"enemy:soldier_1_10",AngerTime:999999}
+summon wolf ~ ~ ~ {id:"minecraft:wolf",Tags:["enemy","enemy.royal"],Health:10f,CustomNameVisible:true,CustomName:'[{"text":"","italic":false},{"text":"聖白獵犬","color": "#FFFFC4","bold": true}]',Attributes:[{Name:"generic.attack_damage",Base:6.0d}],HandItems:[{id:"minecraft:wooden_sword",Count:1b,tag:{CustomModelData:100}},{id:"minecraft:shield",Count:1b,tag:{BlockEntityTag:{Base:0}}}],HandDropChances:[0.0F,0.0F],ArmorItems:[{id:"minecraft:leather_boots",Count:1b,tag:{display:{color:16777215}}},{id:"minecraft:leather_leggings",Count:1b,tag:{display:{color:16777215}}},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:16777215}}},{id:"minecraft:leather_helmet",Count:1b,tag:{display:{color:16777215}}}],ArmorDropChances:[0.0F,0.0F,0.0F,0.0F],PortalCooldown:10,Team:"hostile",DeathLootTable:"enemy:soldier",AngerTime:999999}
 
 
 
