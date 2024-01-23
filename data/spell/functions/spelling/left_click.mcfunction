@@ -1,1 +1,0 @@
-say I left clicked

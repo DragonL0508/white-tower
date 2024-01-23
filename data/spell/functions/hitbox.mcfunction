@@ -1,6 +1,7 @@
 #interaction
     #player click
-    execute on attacker run function spell:spelling/left_click
+    execute on attacker run tag @s add spell.left_click
+    execute on target run tag @s add spell.right_click
 
     #update
     data merge entity @s {Air:1}

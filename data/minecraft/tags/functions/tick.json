@@ -1,8 +1,8 @@
 {
     "values": [
+        "spell:tick",
         "system:tick",
         "endsky_npc:tick",
-        "enemy:tick",
-        "spell:tick"
+        "enemy:tick"
     ]
 }

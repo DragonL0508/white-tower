@@ -187,7 +187,7 @@
                 "entity": "this",
                 "name": [
                   {
-                    "text": "能力資訊 :",
+                    "text": "玩家資訊 :",
                     "color": "gold",
                     "bold": true,
                     "italic": false

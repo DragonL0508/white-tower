@@ -2,6 +2,8 @@
     execute unless data entity @s Inventory[{Slot:-106b,id:"minecraft:carrot_on_a_stick",tag:{offhand:1b}}] run function system:players/offhand/not_holding_item
     #持續更新
     loot replace entity @s weapon.offhand loot system:offhand
+    #刪除物品欄內的副手物品
+    function system:players/offhand/clear_item
 #pots
     #wrong items
     execute unless data entity @s Inventory[{Slot:7b,tag:{player.pots:1b}}] if data entity @s Inventory[{Slot:7b}] run function system:players/pots/drop_item {slot:7}
@@ -21,6 +23,8 @@
     execute if score @s carrot_on_a_stick.right_click matches 1.. if data entity @s SelectedItem{id:"minecraft:purple_dye",tag:{player.pots:1b,CustomModelData:2}} unless score @s player.mana = @s player.maxmana run function system:players/pots/use/mana
 #actionbars
     execute if score @s actionbar_type matches 1 run function system:players/actionbars/normal
+    execute if score @s actionbar_type matches 2 run function system:players/actionbars/spelling
+    execute if score @s actionbar_type matches 3 run function system:players/actionbars/spelling_fail
 #attribute
     execute store result score @s player.maxhp run attribute @s generic.max_health get 1
 #spell loop

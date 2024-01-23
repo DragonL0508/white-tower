@@ -1,0 +1,1 @@
+title @s actionbar {"text": "§c詠唱失敗 §7(沒有這個組合)"}
