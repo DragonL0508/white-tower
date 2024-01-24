@@ -8,6 +8,9 @@ title @s title {"text": ""}
 #animation
 function spell:spelling/animation/spell
 
+#is using shield?
+execute if entity @s[tag=shield.enable] run function system:players/shield/disable
+
 #next button
 scoreboard players add @s spell.button 1
 

@@ -10,6 +10,8 @@ scoreboard objectives setdisplay below_name player.health
 scoreboard objectives add player.maxhp dummy
 scoreboard objectives add player.mana dummy
 scoreboard objectives add player.maxmana dummy
+scoreboard objectives add player.shield dummy
+scoreboard objectives add player.maxshield dummy
 scoreboard objectives add level dummy {"text": "玩家等級"}
 scoreboard objectives add skill_points dummy {"text": "技能點數量"}
 scoreboard objectives add actionbar_type dummy {"text": "玩家actionbar樣式"}
@@ -21,7 +23,9 @@ scoreboard objectives add Mpots.counts dummy
 scoreboard objectives add Hpots.max dummy
 scoreboard objectives add Mpots.max dummy
 scoreboard objectives add carrot_on_a_stick.right_click used:carrot_on_a_stick {"text": "胡蘿蔔釣竿右鍵"}
+scoreboard objectives add sneak custom:sneak_time
 scoreboard objectives add any.timer dummy {"text": "可以是各種東西的計時器"}
+scoreboard objectives add shield.recover.timer dummy
 
 scoreboard objectives add attribute.STR dummy
 scoreboard objectives add attribute.HP dummy

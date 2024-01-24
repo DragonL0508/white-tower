@@ -12,6 +12,11 @@
     #arrows in ground
     kill @e[type=arrow,nbt={inGround:1b}]
 
+#global animation (for macro)
+    scoreboard players add shield.animation temp 18
+    execute if score shield.animation temp matches 360 run scoreboard players set shield.animation temp 0
+    execute store result storage shield.animation.angle angle int 1.0 run scoreboard players get shield.animation temp
+
 #effects those always give players
     effect give @a saturation infinite 100 true
     effect give @a[team=player] resistance infinite 100 true

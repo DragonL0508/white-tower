@@ -33,8 +33,14 @@
 #spell loop
     function spell:loop
 
+#shield system
+    execute if entity @s[tag=shield.enable] run function system:players/shield/animation with storage shield.animation.angle
+    #recover
+    execute if entity @s[tag=!shield.enable] if score @s player.shield < @s player.maxshield run function system:players/shield/recover
+
 #get money
     execute if data entity @s Inventory[{id:"minecraft:gray_dye"}] run function system:players/money/getmoney
 
 #scorebaord reset - 重製玩家記分板
     scoreboard players reset @s carrot_on_a_stick.right_click
+    scoreboard players reset @s sneak

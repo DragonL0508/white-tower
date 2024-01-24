@@ -8,6 +8,8 @@ scoreboard players set @s Mpots.max 1
 
 scoreboard players set @s player.mana 20
 scoreboard players set @s player.maxmana 20
+scoreboard players set @s player.shield 5
+scoreboard players set @s player.maxshield 5
 
 scoreboard players set @s attribute.HP 0
 scoreboard players set @s attribute.INT 0
