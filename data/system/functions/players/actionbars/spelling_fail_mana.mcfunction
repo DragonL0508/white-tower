@@ -1,0 +1,1 @@
+title @s actionbar [{"text": "§c詠唱失敗 §7( "},{"score":{"name":"@s","objective":"player.mana"},"color":"dark_red"},{"text":"/","color":"aqua"},{"score":{"name":"@s","objective":"player.maxmana"},"color":"aqua"},{"text":" 魔力值","color":"aqua"},{"text": " §7)"}]

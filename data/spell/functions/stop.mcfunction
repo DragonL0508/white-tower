@@ -11,6 +11,7 @@ scoreboard players reset @s spell.clicked.1
 scoreboard players reset @s spell.clicked.2
 scoreboard players reset @s spell.clicked.3
 scoreboard players reset @s spell.timer
+scoreboard players reset @s spell.what_spell
 scoreboard players set @s actionbar_type 1
 
 #title clear & reset

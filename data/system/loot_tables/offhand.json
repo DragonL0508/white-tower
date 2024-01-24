@@ -37,6 +37,35 @@
                 "lore": [
                   [
                     {
+                      "text": " 金錢: ",
+                      "color": "yellow",
+                      "bold": false,
+                      "italic": false
+                    },
+                    {
+                      "score": {
+                        "name": "@s",
+                        "objective": "money"
+                      },
+                      "color": "gray",
+                      "bold": false,
+                      "italic": false
+                    },
+                    {
+                      "text": "$",
+                      "color": "gray",
+                      "bold": false,
+                      "italic": false
+                    }
+                  ]
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  [
+                    {
                       "text": " 技能點: ",
                       "color": "yellow",
                       "bold": false,

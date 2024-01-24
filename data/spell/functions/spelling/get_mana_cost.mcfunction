@@ -1,0 +1,1 @@
+execute if score @s spell.what_spell matches 0 run scoreboard players set @s spell.this.manacost 2

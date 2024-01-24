@@ -2,6 +2,7 @@ tellraw @a {"text": "Loaded 純白之塔資料包."}
 
 #create scoreboards
 
+scoreboard objectives add temp dummy {"text": "一些暫存的數值"}
 scoreboard objectives add money dummy {"text": "玩家金錢"}
 scoreboard objectives setdisplay list money
 scoreboard objectives add player.health health {"text": "❤","color": "red"}
@@ -20,6 +21,7 @@ scoreboard objectives add Mpots.counts dummy
 scoreboard objectives add Hpots.max dummy
 scoreboard objectives add Mpots.max dummy
 scoreboard objectives add carrot_on_a_stick.right_click used:carrot_on_a_stick {"text": "胡蘿蔔釣竿右鍵"}
+scoreboard objectives add any.timer dummy {"text": "可以是各種東西的計時器"}
 
 scoreboard objectives add attribute.STR dummy
 scoreboard objectives add attribute.HP dummy
