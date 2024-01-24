@@ -41,6 +41,9 @@
 #get money
     execute if data entity @s Inventory[{id:"minecraft:gray_dye"}] run function system:players/money/getmoney
 
+#leveling system
+    execute if score @s player.exp >= @s level run function system:players/leveling/entry
+
 #scorebaord reset - 重製玩家記分板
     scoreboard players reset @s carrot_on_a_stick.right_click
     scoreboard players reset @s sneak

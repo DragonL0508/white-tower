@@ -13,6 +13,8 @@ scoreboard objectives add player.maxmana dummy
 scoreboard objectives add player.shield dummy
 scoreboard objectives add player.maxshield dummy
 scoreboard objectives add level dummy {"text": "玩家等級"}
+scoreboard objectives add player.exp level {"text": "玩家經驗值"}
+scoreboard objectives add player.exp.require dummy {"text": "玩家升級需要多少經驗值"}
 scoreboard objectives add skill_points dummy {"text": "技能點數量"}
 scoreboard objectives add actionbar_type dummy {"text": "玩家actionbar樣式"}
 

@@ -19,4 +19,4 @@ title @s clear
 title @s reset
 
 #attribute
-attribute @s generic.movement_speed base set 0.1
+attribute @s[tag=!shield.enable] generic.movement_speed base set 0.1
