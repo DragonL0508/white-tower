@@ -6,6 +6,10 @@ data modify storage npc:village blacksmith.Trader set value 1b
 
 data modify storage npc:village blacksmith.NormalRandom set value 0b
 
+# 聲音
+data modify storage npc:village blacksmith.SoundPool set value []
+data modify storage npc:village blacksmith.SoundPool append value {id:"minecraft:entity.vindicator.ambient",setting:{volume:2.0, pitch:1.0}}
+
 # 清空列表
 data modify storage npc:village blacksmith.Normal set value []
 data modify storage npc:village blacksmith.Normal append value {Once:1b,Texts:['{"text":"看來是新人來了"}','{"text":"洒家叫布萊卡恩，\\n是這村最猛的鐵匠"}','{"text":"想升級武器裝備就來找洒家跟我的鍛造台"}','{"text":"要獲得基礎裝備也能找我"}'],Options:[{Option:'{"text":"如何使用鍛造台?"}',React:['{"text":"等龍教你"}']}]}
