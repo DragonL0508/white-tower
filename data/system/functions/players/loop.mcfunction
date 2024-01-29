@@ -22,10 +22,7 @@
     execute if score @s carrot_on_a_stick.right_click matches 1.. if data entity @s SelectedItem{id:"minecraft:purple_dye",tag:{player.pots:1b,CustomModelData:2}} unless score @s player.mana = @s player.maxmana run function system:players/pots/use/mana
 
 #actionbars
-    execute if score @s actionbar_type matches 1 run function system:players/actionbars/normal
-    execute if score @s actionbar_type matches 2 run function system:players/actionbars/spelling
-    execute if score @s actionbar_type matches 3 run function system:players/actionbars/spelling_fail_mana
-    execute if score @s actionbar_type matches 4 run function system:players/actionbars/spelling_fail_button
+    execute unless score @s npc.state matches 1.. run function system:players/actionbars/loop
 
 #attribute
     execute store result score @s player.maxhp run attribute @s generic.max_health get 1
