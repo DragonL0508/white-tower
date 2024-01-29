@@ -1,0 +1,33 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "book",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": {"text": "一本魔法書", "italic": false, "color": "yellow"}
+                        },
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "lore": [
+                                {"text": "從西格瑪那裡買來的魔法書","italic": false,"color": "gray"},
+                                {"text": "可以學會新的魔法","italic": false,"color": "gray"}
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{magic_book1:1b}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

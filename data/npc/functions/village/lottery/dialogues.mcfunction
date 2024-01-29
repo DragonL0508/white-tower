@@ -31,7 +31,7 @@ data modify storage npc:village lottery.Idle append value {Text:'{"text":"搞不
 data modify storage npc:village lottery.Buy set value []
 # Buy和Sell列表的內容，會直接被填入開啟商店介面時召喚的村民，因此當作村民的nbt來填寫即可，除此之外可用Name引用戰利品表的內容(建議為單項物品之戰利品表)來取代id和tag
 # 關於maxUses，當前版本填上2147483647就好，因當前並未寫上能限制購買次數的功能，每次重新召喚村民時此數字都會重置
-data modify storage npc:village lottery.Buy append value {buy:{Name:"quest:demo/demo_currency",Count:12b},sell:{id:"minecraft:paper",Count:1b},maxUses:2147483647}
+data modify storage npc:village lottery.Buy append value {buy:{Name:"quest:demo/demo_currency",Count:12b},sell:{Name:"radio:lottery",Count:1b},maxUses:2147483647}
 # ...
 
 # 清空列表

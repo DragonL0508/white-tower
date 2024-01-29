@@ -1,0 +1,33 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "book",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": {"text": "看起來像魔法書", "italic": false, "color": "yellow"}
+                        },
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "lore": [
+                                {"text": "其實這是飯桶的微積分課本","italic": false,"color": "gray"},
+                                {"text": "幫飯桶QQ","italic": false,"color": "gray"}
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{magic_book2:1b}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

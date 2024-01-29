@@ -1,0 +1,33 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "wooden_axe",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": {"text": "基礎木斧", "italic": false, "color": "yellow"}
+                        },
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "lore": [
+                                {"text": "基礎的木斧","italic": false,"color": "gray"},
+                                {"text": "可惜不能拿它來建築","italic": false,"color": "gray"}
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{weapon:1b}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

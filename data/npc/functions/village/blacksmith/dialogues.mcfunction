@@ -33,7 +33,12 @@ data modify storage npc:village blacksmith.Idle set value []
 data modify storage npc:village blacksmith.Buy set value []
 # Buy和Sell列表的內容，會直接被填入開啟商店介面時召喚的村民，因此當作村民的nbt來填寫即可，除此之外可用Name引用戰利品表的內容(建議為單項物品之戰利品表)來取代id和tag
 # 關於maxUses，當前版本填上2147483647就好，因當前並未寫上能限制購買次數的功能，每次重新召喚村民時此數字都會重置
-data modify storage npc:village blacksmith.Buy append value {buy:{Name:"quest:demo/demo_currency",Count:12b},sell:{Name:"quest:demo/mysterious_stone",Count:1b},maxUses:2147483647}
+data modify storage npc:village blacksmith.Buy append value {buy:{Name:"quest:demo/demo_currency",Count:2b},sell:{Name:"radio:basic_sword",Count:1b},maxUses:2147483647}
+data modify storage npc:village blacksmith.Buy append value {buy:{Name:"quest:demo/demo_currency",Count:3b},sell:{Name:"radio:basic_axe",Count:1b},maxUses:2147483647}
+data modify storage npc:village blacksmith.Buy append value {buy:{Name:"quest:demo/demo_currency",Count:5b},sell:{Name:"radio:basic_helmet",Count:1b},maxUses:2147483647}
+data modify storage npc:village blacksmith.Buy append value {buy:{Name:"quest:demo/demo_currency",Count:8b},sell:{Name:"radio:basic_chestplate",Count:1b},maxUses:2147483647}
+data modify storage npc:village blacksmith.Buy append value {buy:{Name:"quest:demo/demo_currency",Count:7b},sell:{Name:"radio:basic_leggings",Count:1b},maxUses:2147483647}
+data modify storage npc:village blacksmith.Buy append value {buy:{Name:"quest:demo/demo_currency",Count:4b},sell:{Name:"radio:basic_boots",Count:1b},maxUses:2147483647}
 # ...
 
 # 清空列表

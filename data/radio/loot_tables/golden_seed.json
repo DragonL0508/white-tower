@@ -1,0 +1,33 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "gold_nugget",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": {"text": "黃金種子", "italic": false, "color": "yellow"}
+                        },
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "lore": [
+                                {"text": "交給魔藥師-蕾娜","italic": false,"color": "gray"},
+                                {"text": "可以提升藥水瓶數","italic": false,"color": "gray"}
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{golden_seed:1b}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
