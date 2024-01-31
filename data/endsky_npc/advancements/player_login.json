@@ -1,6 +1,6 @@
 {
   "rewards": {
-      "function": "endsky_npc:player_login"
+    "function": "endsky_npc:player_login"
   },
   "criteria": {
     "logged_in": {

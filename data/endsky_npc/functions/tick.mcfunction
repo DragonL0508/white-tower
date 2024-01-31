@@ -1,6 +1,8 @@
 execute store result score $gametime npc.utils run time query gametime
 execute store result score $playerOnline npc.utils if entity @a
 
+execute as @a[scores={npc.state=1..}] at @s unless entity @e[type=minecraft:interaction,tag=npc.tag,scores={npc.occupied=1},distance=..6] run scoreboard players set @s npc.state 0
+
 execute as @e[tag=npc.figure,scores={npc.user=0..}] at @s run function endsky_npc:common/figure
 execute as @e[tag=npc.figure,scores={npc.reset=1..}] at @s run function endsky_npc:common/reset
 
