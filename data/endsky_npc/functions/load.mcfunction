@@ -16,6 +16,9 @@ scoreboard objectives add npc.option dummy
 scoreboard objectives add npc.look_option dummy
 scoreboard objectives add npc.reset dummy
 scoreboard objectives add npc.timer dummy
+## 收音機亂加
+scoreboard objectives add npc.potion dummy
+## 收音機亂加
 
 scoreboard players reset * npc.timer
 scoreboard players set $20 npc.const 20

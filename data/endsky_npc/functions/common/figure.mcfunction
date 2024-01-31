@@ -6,6 +6,9 @@ execute anchored eyes on passengers rotated as @s[type=minecraft:marker] on vehi
 data modify entity @s[type=minecraft:armor_stand] Pose.Head set value [0.1f,0f,0f]
 data modify entity @s[type=minecraft:armor_stand] Pose.Head[0] set from entity @s Rotation[1]
 execute if entity @a[tag=npc.user,scores={npc.state=3}] positioned ~ ~1.4 ~ on passengers rotated as @s[type=minecraft:marker] rotated ~ 0 run function endsky_npc:trader/rotation
+## 收音機亂加
+execute if entity @a[tag=npc.user,scores={npc.state=4}] positioned ~ ~1.4 ~ on passengers rotated as @s[type=minecraft:marker] rotated ~ 0 run function endsky_npc:potion/rotation
+## 收音機亂加
 execute as @a[tag=npc.user] at @s run function endsky_npc:common/player
 execute unless entity @e[type=minecraft:player,tag=npc.user] run function endsky_npc:common/no_user
 tag @a[tag=npc.user] remove npc.user

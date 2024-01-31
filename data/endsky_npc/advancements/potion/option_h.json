@@ -1,0 +1,26 @@
+{
+    "rewards": {
+      "function": "endsky_npc:potion/option/h"
+    },
+    "criteria": {
+      "interacted": {
+        "trigger": "minecraft:player_interacted_with_entity",
+        "conditions": {
+          "entity": {
+            "type": "minecraft:interaction",
+            "nbt": "{Tags:[\"npc.potion_h\"]}"
+          },
+          "player": [
+            {
+              "condition": "minecraft:entity_scores",
+              "scores": {
+                "npc.state": 4
+              },
+              "entity": "this"
+            }
+          ]
+        }
+      }
+    }
+  }
+  
