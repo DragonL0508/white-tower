@@ -23,3 +23,6 @@ scoreboard players set @s actionbar_type 1
 team join player @s
 
 tag @s add joined
+
+#health updater
+effect give @s minecraft:absorption 1 0 true

@@ -64,3 +64,18 @@ team add hostile
 team modify hostile color red
 team modify hostile collisionRule pushOwnTeam
 team modify hostile friendlyFire false
+
+#gamerules
+gamerule doMobSpawning false
+gamerule doFireTick false
+gamerule announceAdvancements true
+gamerule commandBlockOutput false
+gamerule doDaylightCycle false
+gamerule doImmediateRespawn true
+gamerule doTileDrops false
+gamerule disableRaids true
+gamerule doVinesSpread false
+gamerule doWeatherCycle false
+gamerule keepInventory true
+gamerule universalAnger true
+gamerule naturalRegeneration false
