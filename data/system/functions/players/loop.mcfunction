@@ -15,11 +15,16 @@
     #glass bottle
     execute if score @s Hpots.counts matches 0 unless data entity @s Inventory[{Slot:7b,tag:{player.pots:1b},id:"minecraft:glass_bottle"}] run function system:players/pots/sync/start
     execute if score @s Mpots.counts matches 0 unless data entity @s Inventory[{Slot:8b,tag:{player.pots:1b},id:"minecraft:glass_bottle"}] run function system:players/pots/sync/start
+    #get potion level
+    scoreboard players set 1 command 1
+    scoreboard players operation temp.potion_level temp = @s player.potion_level
+    scoreboard players operation temp.potion_level temp -= 1 command
+    execute store result storage this potion_level int 1 run scoreboard players get @s player.potion_level
     #use
     execute if score @s carrot_on_a_stick.right_click matches 1.. if data entity @s SelectedItem{id:"minecraft:purple_dye",tag:{player.pots:1b,CustomModelData:1}} if score @s player.health = @s player.maxhp run function system:players/pots/use/hp_is_max
     execute if score @s carrot_on_a_stick.right_click matches 1.. if data entity @s SelectedItem{id:"minecraft:purple_dye",tag:{player.pots:1b,CustomModelData:2}} if score @s player.mana = @s player.maxmana run function system:players/pots/use/mana_is_max
-    execute if score @s carrot_on_a_stick.right_click matches 1.. if data entity @s SelectedItem{id:"minecraft:purple_dye",tag:{player.pots:1b,CustomModelData:1}} unless score @s player.health = @s player.maxhp run function system:players/pots/use/heal
-    execute if score @s carrot_on_a_stick.right_click matches 1.. if data entity @s SelectedItem{id:"minecraft:purple_dye",tag:{player.pots:1b,CustomModelData:2}} unless score @s player.mana = @s player.maxmana run function system:players/pots/use/mana
+    execute if score @s carrot_on_a_stick.right_click matches 1.. if data entity @s SelectedItem{id:"minecraft:purple_dye",tag:{player.pots:1b,CustomModelData:1}} unless score @s player.health = @s player.maxhp run function system:players/pots/use/heal with storage this
+    execute if score @s carrot_on_a_stick.right_click matches 1.. if data entity @s SelectedItem{id:"minecraft:purple_dye",tag:{player.pots:1b,CustomModelData:2}} unless score @s player.mana = @s player.maxmana run function system:players/pots/use/mana with storage this
 
 #actionbars
     execute unless score @s npc.state matches 1.. run function system:players/actionbars/loop
@@ -41,6 +46,7 @@
 #leveling system
     execute if score @s player.exp >= @s level run function system:players/leveling/entry
 
-#scorebaord reset - 重製玩家記分板
+#scoreboard reset - 重製玩家記分板
+    data modify storage this potion_level set value []
     scoreboard players reset @s carrot_on_a_stick.right_click
     scoreboard players reset @s sneak
