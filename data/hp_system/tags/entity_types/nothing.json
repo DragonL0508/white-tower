@@ -45,6 +45,6 @@
 	"minecraft:block_display",
 	"minecraft:text_display",
 	"minecraft:villager",
-	"minecarft:interaction"
+	"minecraft:interaction"
 	]
 }
