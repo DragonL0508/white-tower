@@ -6,7 +6,7 @@
 data merge storage hostile.this {id:"testmob"}
 
 #display name
-data merge storage hostile.this {name:"testmob"}
+data merge storage hostile.this {name:"test mob"}
 
 #health
 data merge storage hostile.this {health:20}
@@ -27,7 +27,7 @@ data merge storage hostile.this {ability_counts:2}
 data merge storage hostile.this {ability_cd:200}
 
 #is a boss? (true = 1, false = 0)
-data merge storage hostile.this {isBoss:1}
+data merge storage hostile.this {isBoss:0}
 
 #hostilebar color & style
 #If you're creating a regular mob (not a boss), you can ignore this.
@@ -39,7 +39,7 @@ bossbar set boss_health style progress
     data merge storage hostile.this {type:"minecraft:husk"}
 
     #head
-    data merge storage hostile.this {head:"air"}
+    data merge storage hostile.this {head:"leather_helmet"}
 
     #chest
     data merge storage hostile.this {chest:"air"}
@@ -51,7 +51,7 @@ bossbar set boss_health style progress
     data merge storage hostile.this {feet:"air"}
 
     #mainhand
-    data merge storage hostile.this {mainhand:"air"}
+    data merge storage hostile.this {mainhand:"wooden_sword{CustomModelData:101}"}
 
     #offhand
     data merge storage hostile.this {offhand:"air"}
