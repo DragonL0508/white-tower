@@ -22,4 +22,4 @@ $tag @e[tag=this,team=hostile] add hostile_$(id)
 execute as @e[tag=this,team=hostile] run tag @s remove this
 
 #add this hostile type to hostiles list
-$data modify storage hostile.list list append string storage hostile.$(id) id
+$data modify storage hostile.list list merge from storage hostile.$(id) id
