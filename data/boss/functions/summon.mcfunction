@@ -2,6 +2,7 @@
 $data merge storage boss.$(id) {id:$(id),name:$(name),health:$(health),atk:$(atk),speed:$(speed),kb:$(kb),ability_counts:$(ability_counts),ability_cd:$(ability_cd)}
 
 $bossbar set boss_health max $(health)
+$bossbar set boss_health name {"text":"$(name)","color":"red"}
 
 $summon $(type) ~ ~ ~ {PortalCooldown:$(health),Tags:["this","boss"],Team:hostile,CustomName:'{"text":"$(name)","color":"red"}'}
 
