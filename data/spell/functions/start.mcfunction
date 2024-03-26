@@ -1,5 +1,5 @@
 #summon
-    summon interaction ~ ~1.25 ~ {Tags:["spell.hitbox"],width:0.5f,height:0.5f,teleport_duration:1}
+    summon interaction ~ ~1.25 ~ {Tags:["spell.hitbox"],width:1f,height:1f,teleport_duration:1}
 #tag add
     tag @s add ms.holding
 #spell button

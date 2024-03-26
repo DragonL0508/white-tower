@@ -1,7 +1,7 @@
 #interaction
     #player click
-    execute on attacker run tag @s add spell.left_click
-    execute on target run tag @s add spell.right_click
+    execute on attacker if entity @s[tag=ms.holding] run tag @s add spell.left_click
+    execute on target if entity @s[tag=ms.holding] run tag @s add spell.right_click
 
     #update
     scoreboard players add @s interaction.air 1
