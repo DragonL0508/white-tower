@@ -4,8 +4,6 @@
     execute on target run tag @s add spell.right_click
 
     #update
-    data merge entity @s {Air:0}
-    data merge entity @s {Air:1}
     data remove entity @s attack
     data remove entity @s interaction
 
