@@ -1,4 +1,4 @@
-tellraw @a {"text": "Loaded 純白之塔資料包."}
+tellraw @a {"text": "Loaded 純白之塔資料包.123"}
 
 #create scoreboards
 
