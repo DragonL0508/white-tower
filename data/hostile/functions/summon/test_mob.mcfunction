@@ -3,10 +3,10 @@
 #THIS IS A TEMPLATE FILE
 
 #name ID
-data merge storage hostile.this {id:"test_mob"}
+data merge storage hostile.this {id:"testmob"}
 
 #display name
-data merge storage hostile.this {name:"test mob"}
+data merge storage hostile.this {name:"testmob"}
 
 #health
 data merge storage hostile.this {health:20}
