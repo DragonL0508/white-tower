@@ -5,6 +5,7 @@
         "endsky_npc:load",
         "find_looking:internal/load",
         "hp_system:type/new",
-        "enemy:load"
+        "enemy:load",
+        "boss:load"
     ]
 }

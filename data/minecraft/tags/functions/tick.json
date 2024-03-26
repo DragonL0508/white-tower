@@ -3,6 +3,7 @@
         "spell:tick",
         "system:tick",
         "endsky_npc:tick",
-        "enemy:tick"
+        "enemy:tick",
+        "boss:tick"
     ]
 }
