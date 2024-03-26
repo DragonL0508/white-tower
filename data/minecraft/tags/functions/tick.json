@@ -4,6 +4,6 @@
         "system:tick",
         "endsky_npc:tick",
         "enemy:tick",
-        "boss:tick"
+        "hostile:tick"
     ]
 }
