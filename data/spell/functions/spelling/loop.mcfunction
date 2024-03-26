@@ -9,4 +9,4 @@
     execute if entity @s[tag=spelling] run function spell:spelling/spelling_loop
 
 #not holding magic stick anymore
-    execute unless data entity @s SelectedItem{tag:{magic_stick:1b}} run function spell:stop
+    execute unless data entity @s SelectedItem{tag:{magic_wand:1b}} run function spell:stop
