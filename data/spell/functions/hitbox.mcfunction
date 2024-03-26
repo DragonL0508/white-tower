@@ -4,8 +4,11 @@
     execute on target run tag @s add spell.right_click
 
     #update
-    data merge entity @s {Air:1}
-    data merge entity @s {Air:0}
+    scoreboard players add @s interaction.air 1
+    execute if score @s interaction.air matches 2 run scoreboard players set @s interaction.air 0
+    execute if score @s interaction.air matches 0 run data merge entity @s {Air:0}
+    execute if score @s interaction.air matches 1 run data merge entity @s {Air:1}
+    
     data remove entity @s attack
     data remove entity @s interaction
 
