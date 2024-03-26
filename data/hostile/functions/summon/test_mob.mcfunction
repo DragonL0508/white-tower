@@ -6,7 +6,7 @@
 data merge storage hostile.this {id:"test_mob"}
 
 #display name
-data merge storage hostile.this {name:":D"}
+data merge storage hostile.this {name:"test mob"}
 
 #health
 data merge storage hostile.this {health:20}
