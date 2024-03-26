@@ -71,6 +71,8 @@ team modify hostile collisionRule pushOwnTeam
 team modify hostile friendlyFire false
 
 #gamerules
+difficulty hard
+
 gamerule doMobSpawning false
 gamerule doFireTick false
 gamerule announceAdvancements true

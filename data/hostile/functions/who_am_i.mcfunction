@@ -1,4 +1,4 @@
 data modify storage hostile.list.cache list set from storage hostile.list list
 
-#how many type of hostile
+#check how many type of hostile & execute death commands
 function hostile:how_many_hostile {counter:0}
