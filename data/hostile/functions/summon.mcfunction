@@ -18,4 +18,8 @@ $attribute @e[tag=this,team=hostile,limit=1] generic.knockback_resistance base s
 
 $execute as @e[tag=this,team=hostile,limit=1] at @s run function hostile/hostile/$(id)/on_summon
 
+$tag @e[tag=this,team=hostile] add hostile_$(id)
 execute as @e[tag=this,team=hostile] run tag @s remove this
+
+#add this hostile type to hostiles list
+$data modify storage hostile.list list append string storage hostile.$(id) id
