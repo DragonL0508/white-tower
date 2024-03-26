@@ -1,8 +1,8 @@
 $scoreboard players set hostile.type.counter command $(counter)
 
 #is exist
-$execute unless data storage minecraft:hostile.list.cache {list:"$(id)"} run data modify storage hostile.list list prepend from storage hostile.$(id) id
-$execute unless data storage minecraft:hostile.list.cache {list:"$(id)"} run data remove storage hostile.list.cache list
+$execute unless data storage minecraft:hostile.list.cache {list:["$(id)"]} run data modify storage hostile.list list prepend from storage hostile.$(id) id
+$execute unless data storage minecraft:hostile.list.cache {list:["$(id)"]} run data remove storage hostile.list.cache list
 
 #if there're more
 $execute if data storage minecraft:hostile.list.cache list[$(counter)] run scoreboard players operation hostile.type.counter command += 1 command
