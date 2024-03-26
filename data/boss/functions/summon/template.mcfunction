@@ -27,9 +27,8 @@ data merge storage boss.this {ability_counts:2}
 data merge storage boss.this {ability_cd:200}
 
 #bossbar color & style
-#color list: yellow, white, red, purple, pink, green, blue
-#style list: progress, notched_6, notched_10, notched_12, notched_20,
-data merge storage boss.this {bb_color:"yellow", bb_style:"progress"}
+bossbar set boss_health color yellow
+bossbar set boss_health style progress
 
 #details
     #mob type
