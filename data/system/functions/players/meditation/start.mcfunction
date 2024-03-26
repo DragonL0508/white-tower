@@ -1,4 +1,4 @@
-title @s times 5 10 10
+title @s times 0 10 10
 title @s subtitle {"text": "\uE000"}
 title @s title {"text": "§7☽ 冥想"}
 tellraw @s {"text": "§7§o*  你閉上了雙眼，開始冥想。 *"}
