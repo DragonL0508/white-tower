@@ -1,4 +1,4 @@
-title @s times 0 10 10
+title @s times 5 10 10
 title @s subtitle {"text": "\uE000"}
 title @s title {"text": "§7☽ 冥想"}
 tellraw @s {"text": "§7§o*  你閉上了雙眼，開始冥想。 *"}
@@ -17,7 +17,7 @@ summon marker ~ ~ ~ {Tags:["meditation.back"]}
 tp @e[type=marker,tag=meditation.back,sort=nearest,limit=1] @s
 scoreboard players operation @e[type=marker,tag=meditation.back,sort=nearest,limit=1] meditation.id = @s meditation.id
 
-tp @s 1019 -48 1438 180 90
-playsound entity.evoker.prepare_summon master @s 1019 -48 1438 0.5 1.7
+playsound entity.evoker.prepare_summon master @s ~ ~ ~ 0.5 1.7
+function cb:schedule {ticks:10,selector:"@s",command:"tp @s 1019 -48 1438 180 90"}
 
 tag @s add in_meditation
