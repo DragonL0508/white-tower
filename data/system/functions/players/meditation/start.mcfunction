@@ -18,6 +18,7 @@ tp @e[type=marker,tag=meditation.back,sort=nearest,limit=1] @s
 scoreboard players operation @e[type=marker,tag=meditation.back,sort=nearest,limit=1] meditation.id = @s meditation.id
 
 playsound entity.evoker.prepare_summon master @s ~ ~ ~ 0.5 1.7
+playsound entity.evoker.prepare_summon master @s 1019 -48 1438 0.5 1.7
 function cb:schedule {ticks:10,selector:"@s",command:"tp @s 1019 -48 1438 180 90"}
 
 tag @s add in_meditation
