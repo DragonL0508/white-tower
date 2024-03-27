@@ -6,3 +6,4 @@ tag @e[tag=floor_teleporter] remove floor_teleporter
 $tag @e[tag=$(tp)] add floor_teleporter
 
 scoreboard players set state tower 1
+function system:tower/command/scheduler/preparing
