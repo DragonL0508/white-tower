@@ -1,1 +1,1 @@
-$execute as @e[team=hostile,tag=hostile_$(id)] at @s run function hostile:command/hostile/$(id)/loop
+$execute as @e[team=hostile,tag=hostile_$(id)] at @s run function hostile:hostile/$(id)/loop
