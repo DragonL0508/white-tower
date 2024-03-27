@@ -3,7 +3,7 @@ $data merge storage hostile.$(id) {id:$(id),name:$(name),health:$(health),atk:$(
 
 $summon $(type) ~ ~ ~ {PortalCooldown:$(health),Tags:["this"],Team:hostile,CustomName:'{"text":"$(name)","color":"red"}'}
 
-$execute if data storage hostile.$(id) {isBoss:1} run function hostile:is_boss with storage hostile.$(id)
+$execute if data storage hostile.$(id) {isBoss:1} run function hostile:command/is_boss with storage hostile.$(id)
 
 $item replace entity @e[tag=this,team=hostile] armor.head with $(head)
 $item replace entity @e[tag=this,team=hostile] armor.chest with $(chest)
@@ -16,11 +16,11 @@ $attribute @e[tag=this,team=hostile,limit=1] generic.attack_damage base set $(at
 $attribute @e[tag=this,team=hostile,limit=1] generic.movement_speed base set $(speed)
 $attribute @e[tag=this,team=hostile,limit=1] generic.knockback_resistance base set $(kb)
 
-$execute as @e[tag=this,team=hostile,limit=1] at @s run function hostile:hostile/$(id)/on_summon
+$execute as @e[tag=this,team=hostile,limit=1] at @s run function hostile:command/hostile/$(id)/on_summon
 
 $tag @e[tag=this,team=hostile] add hostile_$(id)
 execute as @e[tag=this,team=hostile] run tag @s remove this
 
 #add this hostile type to hostiles list
 data modify storage hostile.list.cache list set from storage hostile.list list
-$function hostile:is_type_exist {counter:0, id:$(id)}
+$function hostile:command/is_type_exist {counter:0, id:$(id)}

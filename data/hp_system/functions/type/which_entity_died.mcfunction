@@ -3,7 +3,7 @@
 #抓取哪個實體死亡 可以在kill發生前執行需要的動作
 #===============================================
 #execute if entity @s[type=creeper,tag=test] run say test creeper died
-execute if entity @s[team=hostile] at @s run function hostile:who_am_i
+execute if entity @s[team=hostile] at @s run function hostile:command/who_am_i
 
 
 

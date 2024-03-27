@@ -8,4 +8,4 @@ execute store result bossbar boss_health value run scoreboard players get @e[tag
 
 #mobs loop
 data modify storage hostile.list.cache list set from storage hostile.list list
-function hostile:make_target_execute
+function hostile:command/make_target_execute

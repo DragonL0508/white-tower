@@ -58,5 +58,5 @@ bossbar set boss_health style progress
 
 #DO NOT modify the following functions unless you know what you're doing.
 #-----
-function hostile:summon with storage hostile.this
+function hostile:command/summon with storage hostile.this
 #-----
