@@ -5,6 +5,7 @@ execute unless entity @a[team=intower] run function system:tower/command/is_firs
 #player commands
 team join intower
 tellraw @a [{"text": "§7[§e!§7] "},{"selector":"@s"},{"text": " §c準備挑戰第"},{"score":{"name":"floor","objective":"tower"},"color":"red"},{"text": "§c層。"}]
+function system:players/pots/refill
 
 title @s times 5 10 10
 title @s subtitle {"text": "\uE000"}
