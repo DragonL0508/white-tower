@@ -2,7 +2,6 @@ title @s times 5 10 10
 title @s subtitle {"text": "\uE000"}
 title @s title {"text": "§7☽ 冥想"}
 tellraw @s {"text": "§7§o*  你閉上了雙眼，開始冥想。 *"}
-scoreboard players set @s actionbar_type 5
 
 effect give @s blindness 1 0 true
 effect give @s speed infinite 4 true
@@ -19,5 +18,6 @@ scoreboard players operation @e[type=marker,tag=meditation.back,sort=nearest,lim
 
 playsound entity.evoker.prepare_summon master @s ~ ~ ~ 999999 1.7 1
 function cb:schedule {ticks:10,selector:"@s",command:"tp @s 1019 -48 1438 180 90"}
+function cb:schedule {ticks:10,selector:"@s",command:"scoreboard players set @s actionbar_type 5"}
 
 tag @s add in_meditation
