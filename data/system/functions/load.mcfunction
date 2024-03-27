@@ -2,6 +2,7 @@ tellraw @a {"text": "Loaded 純白之塔資料包."}
 
 #create scoreboards
 
+scoreboard objectives add tower dummy {"text": "與塔相關的資料"}
 scoreboard objectives add temp dummy {"text": "一些暫存的數值"}
 scoreboard objectives add money dummy {"text": "玩家金錢"}
 scoreboard objectives setdisplay list money
@@ -39,6 +40,7 @@ scoreboard objectives add attribute.LUC dummy
 scoreboard objectives add attribute.INT dummy
 
 #declare tag in_meditation
+#declare storage tower:floor.data
 
 #create teams
 team add player
