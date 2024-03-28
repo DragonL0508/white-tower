@@ -54,8 +54,8 @@
 
 #player sprint control
     effect give @s hunger infinite 255 true
-    execute if score @s[tag=!can_not_sprint] player.hunger matches 7 run effect give @s saturation 1 0 true
-    execute if score @s[tag=can_not_sprint] player.hunger matches 5 run effect give @s saturation 1 0 true
+    execute if score @s[tag=!can_not_sprint] player.hunger matches ..7 run effect give @s saturation 1 0 true
+    execute if score @s[tag=can_not_sprint] player.hunger matches ..5 run effect give @s saturation 1 0 true
 
 #scoreboard reset - 重製玩家記分板
     data modify storage this potion_level set value []
