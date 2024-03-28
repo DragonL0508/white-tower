@@ -40,11 +40,22 @@
     #recover
     execute if entity @s[tag=!shield.enable] if score @s player.shield < @s player.maxshield run function system:players/shield/recover
 
+#meditation
+    #store pitch data into scoreboard
+    execute store result score @s player.pitch run data get entity @s Rotation[1]
+    #checker
+    execute if entity @s[team=player,tag=!in_meditation] if score @s player.pitch matches 80.. if score @s sneak matches 1.. run function system:players/meditation/start
+
 #get money
     execute if data entity @s Inventory[{id:"minecraft:gray_dye"}] run function system:players/money/getmoney
 
 #leveling system
     execute if score @s player.exp >= @s level run function system:players/leveling/entry
+
+#player sprint control
+    effect give @s hunger infinite 255 true
+    execute if score @s[tag=!can_not_sprint] player.hunger matches ..7 run effect give @s saturation 1 0 true
+    execute if score @s[tag=can_not_sprint] player.hunger matches ..5 run effect give @s saturation 1 0 true
 
 #scoreboard reset - 重製玩家記分板
     data modify storage this potion_level set value []

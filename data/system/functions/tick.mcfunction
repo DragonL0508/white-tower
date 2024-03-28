@@ -4,6 +4,9 @@
     #make all players execute
     execute as @a at @s run function system:players/loop
 
+#tower loop
+    function system:tower/tick
+
 #kill items that is not allowed
     #offhand item
     kill @e[type=item,nbt={Item:{tag:{offhand:1b},id:"minecraft:carrot_on_a_stick"}}]
@@ -18,6 +21,6 @@
     execute store result storage shield.animation.angle angle int 1.0 run scoreboard players get shield.animation temp
 
 #effects those always give players
-    effect give @a saturation infinite 100 true
+    #effect give @a saturation infinite 100 true
     effect give @a[team=player] resistance infinite 100 true
     effect give @a[team=player] fire_resistance infinite 100 true

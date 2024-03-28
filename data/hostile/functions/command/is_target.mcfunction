@@ -1,0 +1,2 @@
+$execute if entity @s[tag=hostile_$(target_tag)] at @s run function hostile:hostile/$(target_tag)/on_death
+$execute if entity @s[tag=hostile_$(target_tag)] run data remove storage hostile.list.cache list

@@ -1,5 +1,5 @@
 #hit box
-    execute if data entity @s[tag=!ms.holding] SelectedItem{tag:{magic_stick:1b}} run function spell:start
+    execute if data entity @s[tag=!ms.holding,tag=!in_meditation] SelectedItem{tag:{magic_wand:1b}} run function spell:start
 #tick
     execute if entity @s[tag=ms.holding] run function spell:interaction
 #click detection

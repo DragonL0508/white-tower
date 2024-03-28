@@ -2,10 +2,12 @@ tellraw @a {"text": "Loaded 純白之塔資料包."}
 
 #create scoreboards
 
+scoreboard objectives add tower dummy {"text": "與塔相關的資料"}
 scoreboard objectives add temp dummy {"text": "一些暫存的數值"}
 scoreboard objectives add money dummy {"text": "玩家金錢"}
 scoreboard objectives setdisplay list money
 scoreboard objectives add player.health health {"text": "❤","color": "red"}
+scoreboard objectives add player.hunger food
 scoreboard objectives setdisplay below_name player.health
 scoreboard objectives add player.maxhp dummy
 scoreboard objectives add player.mana dummy
@@ -18,6 +20,8 @@ scoreboard objectives add player.exp level {"text": "玩家經驗值"}
 scoreboard objectives add player.exp.require dummy {"text": "玩家升級需要多少經驗值"}
 scoreboard objectives add skill_points dummy {"text": "技能點數量"}
 scoreboard objectives add actionbar_type dummy {"text": "玩家actionbar樣式"}
+scoreboard objectives add player.pitch dummy
+scoreboard objectives add meditation.id dummy
 
 scoreboard objectives add Hpots.real dummy
 scoreboard objectives add Mpots.real dummy
@@ -35,6 +39,9 @@ scoreboard objectives add attribute.HP dummy
 scoreboard objectives add attribute.RES dummy
 scoreboard objectives add attribute.LUC dummy
 scoreboard objectives add attribute.INT dummy
+
+#declare tag in_meditation
+#declare storage tower:floor.data
 
 #create teams
 team add player
@@ -67,6 +74,8 @@ team modify hostile collisionRule pushOwnTeam
 team modify hostile friendlyFire false
 
 #gamerules
+difficulty hard
+
 gamerule doMobSpawning false
 gamerule doFireTick false
 gamerule announceAdvancements true

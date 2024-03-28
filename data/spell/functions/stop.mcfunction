@@ -4,6 +4,7 @@ execute positioned ~ ~1.25 ~ run kill @e[type=interaction,tag=spell.hitbox,sort=
 #tag clear
 tag @s remove ms.holding
 tag @s remove spelling
+tag @s remove can_not_sprint
 
 #scoreboard reset
 scoreboard players reset @s spell.button
