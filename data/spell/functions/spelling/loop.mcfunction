@@ -1,5 +1,5 @@
 #summon new hitbox when hitbox gone
-    execute positioned ~ ~1.25 ~ unless entity @e[type=interaction,tag=spell.hitbox,distance=..1] run summon interaction ~ ~ ~ {Tags:["spell.hitbox"],width:3f,height:3f}
+    execute unless entity @e[type=interaction,tag=spell.hitbox,distance=..1] run summon interaction ~ ~ ~ {Tags:["spell.hitbox"],width:3f,height:3f}
 
 #player button detect
     execute store result storage spell.button.temp button int 1.0 run scoreboard players get @s spell.button
