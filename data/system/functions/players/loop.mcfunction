@@ -54,7 +54,7 @@
 
 #player sprint control
     effect give @s hunger infinite 255 true
-    execute if score @s player.hunger matches 0 run effect give @s saturation 1 0 true
+    execute if score @s player.hunger matches 6 run effect give @s saturation 1 0 true
 
 #scoreboard reset - 重製玩家記分板
     data modify storage this potion_level set value []
