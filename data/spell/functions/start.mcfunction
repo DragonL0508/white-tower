@@ -1,5 +1,5 @@
 #summon
-    summon interaction ~ ~ ~ {Tags:["spell.hitbox"],width:3f,height:3f}
+    summon interaction ~ ~1 ~ {Tags:["spell.hitbox"],width:1f,height:1f}
 #tag add
     tag @s add ms.holding
     tag @s add can_not_sprint
