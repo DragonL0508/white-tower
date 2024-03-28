@@ -10,7 +10,6 @@
     #execute if score @s interaction.air matches 1 run data modify entity @s Air set value 1
     data merge entity @s {Air:0}
     data merge entity @s {Air:1}
-    data merge entity @s {Air:2}
 
     data remove entity @s attack
     data remove entity @s interaction

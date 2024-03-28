@@ -52,6 +52,10 @@
 #leveling system
     execute if score @s player.exp >= @s level run function system:players/leveling/entry
 
+#player sprint control
+    effect give @s hunger infinite 255 true
+    execute if score @s hunger_bar matches 0 run effect give @s saturation 1 0 true
+
 #scoreboard reset - 重製玩家記分板
     data modify storage this potion_level set value []
     scoreboard players reset @s carrot_on_a_stick.right_click

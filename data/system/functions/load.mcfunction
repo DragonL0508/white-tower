@@ -7,6 +7,7 @@ scoreboard objectives add temp dummy {"text": "一些暫存的數值"}
 scoreboard objectives add money dummy {"text": "玩家金錢"}
 scoreboard objectives setdisplay list money
 scoreboard objectives add player.health health {"text": "❤","color": "red"}
+scoreboard objectives add player.hunger food
 scoreboard objectives setdisplay below_name player.health
 scoreboard objectives add player.maxhp dummy
 scoreboard objectives add player.mana dummy
