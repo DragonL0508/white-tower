@@ -21,6 +21,6 @@
     execute store result storage shield.animation.angle angle int 1.0 run scoreboard players get shield.animation temp
 
 #effects those always give players
-    effect give @a saturation infinite 100 true
+    #effect give @a saturation infinite 100 true
     effect give @a[team=player] resistance infinite 100 true
     effect give @a[team=player] fire_resistance infinite 100 true
