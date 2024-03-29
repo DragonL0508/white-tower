@@ -1,1 +1,1 @@
-$execute as @e[type=marker,tag=$(mob_spawn),sort=random,limit=1] at @s run function hostile:summon/$(wave_this_mob)
+$execute as @e[type=marker,tag=mob_spawn_spot,sort=random,limit=1] at @s run function hostile:summon/$(wave_this_mob)
