@@ -42,6 +42,7 @@ scoreboard objectives add attribute.INT dummy
 
 #declare tag in_meditation
 #declare storage tower:floor.data
+#declare storage tower:waves.cache
 
 #create bossbar
 bossbar add timelimit {"text": ""}

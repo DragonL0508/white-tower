@@ -12,7 +12,7 @@ function system:tower/command/scheduler/preparing/timelimit_title with storage t
 execute as @a[team=intower] at @s run playsound ui.button.click master @s ~ ~ ~ 0.2 1.5 0.2
 
 #stop the schedule
-execute if score timer tower matches 0 run function system:tower/command/scheduler/preparing/next
+execute if score timer tower matches 0 run function system:tower/command/scheduler/preparing/next with storage tower:floor.data
 
 #remove timer
 scoreboard players remove timer tower 1

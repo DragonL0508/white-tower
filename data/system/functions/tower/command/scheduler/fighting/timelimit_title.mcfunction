@@ -1,0 +1,1 @@
+$bossbar set timelimit name [{"text": "§e剩餘時間: "},{"text": "$(fighting_timer)","color": "#FFFFCC"},{"text": "§e秒"}]
