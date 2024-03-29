@@ -3,3 +3,6 @@ execute unless score state tower matches -2147483648..2147483647 run function sy
 execute if score state tower matches 1 run function system:tower/command/preparing
 execute if score state tower matches 2 run function system:tower/command/fighting
 execute if score state tower matches 3 run function system:tower/command/game_end
+
+#show timelimit bossbar to intower players
+bossbar set timelimit players @a[team=intower]

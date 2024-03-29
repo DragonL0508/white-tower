@@ -43,6 +43,12 @@ scoreboard objectives add attribute.INT dummy
 #declare tag in_meditation
 #declare storage tower:floor.data
 
+#create bossbar
+bossbar add timelimit {"text": ""}
+bossbar set timelimit visible true
+bossbar set timelimit style progress
+bossbar set timelimit color pink
+
 #create teams
 team add player
 team modify player color gray

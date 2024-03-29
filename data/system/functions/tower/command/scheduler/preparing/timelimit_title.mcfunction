@@ -1,0 +1,1 @@
+$bossbar set timelimit name [{"text": "§e遊戲將在"},{"text": "$(preparing_timer)","color": "#FFFFCC"},{"text": "§e秒後開始"}]
