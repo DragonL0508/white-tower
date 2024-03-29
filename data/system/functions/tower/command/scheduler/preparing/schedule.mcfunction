@@ -14,5 +14,5 @@ execute as @a[team=intower] at @s run playsound ui.button.click master @s ~ ~ ~ 
 #stop the schedule
 execute if score timer tower matches 0 run function system:tower/command/scheduler/preparing/next
 
-#remove timer 1
+#remove timer
 scoreboard players remove timer tower 1
