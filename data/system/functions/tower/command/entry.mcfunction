@@ -8,7 +8,7 @@ tellraw @a [{"text": "§7[§e!§7] "},{"selector":"@s"},{"text": " §c準備挑�
 function system:players/pots/refill
 
 title @s times 5 10 10
-title @s subtitle {"text": "\uE000"}
+title @s title {"text": "\uE000"}
 #title @s title [{"text":"第","color":"gray"},{"score":{"name":"floor","objective":"tower"},"color":"red"},{"text":"層","color":"gray"}]
 
 function cb:schedule {ticks:10,selector:"@s",command:"tp @s @e[type=marker,tag=floor_teleporter,limit=1]"}
