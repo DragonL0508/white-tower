@@ -1,3 +1,7 @@
+#reset data
+data remove storage tower:floor.data wave_mobs
+
+#set datas
 data modify storage tower:floor.data wave_mobs.1 append value ["testmob","testmob"]
 
 data modify storage tower:floor.data wave_mobs.2 append value ["testmob","testmob","testmob"]
