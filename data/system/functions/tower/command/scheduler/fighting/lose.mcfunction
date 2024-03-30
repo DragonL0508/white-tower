@@ -8,3 +8,4 @@ scoreboard players reset state tower
 team join prepared @a[team=intower]
 kill @e[team=hostile]
 kill @e[type=item]
+schedule clear system:tower/command/scheduler/fighting/schedule
