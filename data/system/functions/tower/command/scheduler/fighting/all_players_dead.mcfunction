@@ -1,0 +1,1 @@
+function system:tower/command/scheduler/fighting/lose {reason:"全隊陣亡"}
