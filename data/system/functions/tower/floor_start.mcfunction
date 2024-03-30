@@ -17,4 +17,5 @@ data remove storage tower:waves.cache waves
 
 scoreboard players set state tower 1
 scoreboard players set wave tower 1
+scoreboard players reset wave_cd tower
 function system:tower/command/scheduler/preparing/schedule
