@@ -1,0 +1,1 @@
+kill @e[team=hostile,tag=!boss]
