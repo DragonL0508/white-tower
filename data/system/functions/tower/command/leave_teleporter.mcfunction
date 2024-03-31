@@ -1,1 +1,1 @@
-particle portal ~ ~3 ~ 0 2.5 0 2.5 50 force
+particle portal ~ ~3 ~ 0 2.5 2.5 0 50 force
