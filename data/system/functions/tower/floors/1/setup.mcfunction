@@ -17,6 +17,9 @@ data merge storage tower:floor.data {mob_spawn:"1-10.normal.mob"}
 #boss spawn tag (ignore this if this is not a boss level)
 data merge storage tower:floor.data {boss_spawn:"5.boss"}
 
+#level rewards
+data merge storage tower:floor.data {xp_rewards:100}
+
 #DO NOT modify the following functions unless you know what you're doing
 #-----
 function system:tower/floor_start with storage tower:floor.data

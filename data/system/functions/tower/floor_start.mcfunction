@@ -1,6 +1,7 @@
 $scoreboard players set floor.type tower $(type)
 $scoreboard players set floor.timelimit tower $(timelimit)
 $scoreboard players set floor.waves tower $(waves)
+$scoreboard players set xp.rewards tower $(xp_rewards)
 
 #marker tags
 tag @e[tag=floor_teleporter] remove floor_teleporter
