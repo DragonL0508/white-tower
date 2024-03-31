@@ -21,4 +21,4 @@ execute store result score result hit_amount run data get storage this:this resu
 $scoreboard players operation $(who) damage $(operation)= result hit_amount
 
 #add to final damage
-$scoreboard players operation @s Fan.FinalDamage += $(who) damage
+scoreboard players operation @s Fan.FinalDamage += result hit_amount
