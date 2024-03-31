@@ -21,10 +21,7 @@
     scoreboard players operation temp.potion_level temp -= 1 command
     execute store result storage this potion_level int 1 run scoreboard players get @s player.potion_level
     #use
-    execute if score @s carrot_on_a_stick.right_click matches 1.. if data entity @s SelectedItem{id:"minecraft:purple_dye",tag:{player.pots:1b,CustomModelData:1}} if score @s player.health = @s player.maxhp run function system:players/pots/use/hp_is_max
-    execute if score @s carrot_on_a_stick.right_click matches 1.. if data entity @s SelectedItem{id:"minecraft:purple_dye",tag:{player.pots:1b,CustomModelData:2}} if score @s player.mana = @s player.maxmana run function system:players/pots/use/mana_is_max
-    execute if score @s carrot_on_a_stick.right_click matches 1.. if data entity @s SelectedItem{id:"minecraft:purple_dye",tag:{player.pots:1b,CustomModelData:1}} unless score @s player.health = @s player.maxhp run function system:players/pots/use/heal with storage this
-    execute if score @s carrot_on_a_stick.right_click matches 1.. if data entity @s SelectedItem{id:"minecraft:purple_dye",tag:{player.pots:1b,CustomModelData:2}} unless score @s player.mana = @s player.maxmana run function system:players/pots/use/mana with storage this
+    execute if score @s carrot_on_a_stick.right_click matches 1.. run function system:players/right_clicked
 
 #actionbars
     execute unless score @s npc.state matches 1.. run function system:players/actionbars/loop
@@ -57,7 +54,11 @@
     execute if score @s[tag=!can_not_sprint] player.hunger matches ..7 run effect give @s saturation 1 0 true
     execute if score @s[tag=can_not_sprint] player.hunger matches ..5 run effect give @s saturation 1 0 true
 
+#player dead event
+    execute if score @s dead_event matches 1.. run function system:players/dead
+
 #scoreboard reset - 重製玩家記分板
     data modify storage this potion_level set value []
     scoreboard players reset @s carrot_on_a_stick.right_click
     scoreboard players reset @s sneak
+    scoreboard players reset @s dead_event

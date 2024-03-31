@@ -4,6 +4,7 @@ title @a[team=intower] title {"text": "§7關卡失敗"}
 execute as @a[team=intower] at @s run playsound entity.generic.explode master @s ~ ~ ~ 2 1 1
 
 #reset
+tag @a remove all_players_dead
 scoreboard players reset state tower
 team join prepared @a[team=intower]
 kill @e[team=hostile]

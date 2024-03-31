@@ -5,6 +5,7 @@ tellraw @a {"text": "Loaded 純白之塔資料包."}
 scoreboard objectives add tower dummy {"text": "與塔相關的資料"}
 scoreboard objectives add temp dummy {"text": "一些暫存的數值"}
 scoreboard objectives add money dummy {"text": "玩家金錢"}
+scoreboard objectives add dead_event deathCount {"text": "玩家死亡(會被清除)"}
 scoreboard objectives setdisplay list money
 scoreboard objectives add player.health health {"text": "❤","color": "red"}
 scoreboard objectives add player.hunger food
