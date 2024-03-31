@@ -27,9 +27,13 @@ scoreboard players set 10 Fan.damageType 10
 $scoreboard players set $(type) Fan.damageType 1
 #damage
 $execute if score damage Fan.damageType matches 1 run scoreboard players add @e[type=!#hp_system:nothing,tag=Fan.target] $(type) $(damage)
+#add final damage score
+$execute if score damage Fan.damageType matches 1 run scoreboard players operation @s Fan.FinalDamage += $(type) $(damage)
 execute if score damage Fan.damageType matches 1 as @e[type=!#hp_system:nothing,tag=Fan.target] run scoreboard players operation @s damage *= 10 Fan.damageType
 #damage2
 $execute if score damage2 Fan.damageType matches 1 run scoreboard players add @e[type=!#hp_system:nothing,tag=Fan.target] $(type) $(damage)
+#add final damage2 score
+$execute if score damage2 Fan.damageType matches 1 run scoreboard players operation @s Fan.FinalDamage2 += $(type) $(damage)
 #reset scoreboard and remove object
 scoreboard players reset * Fan.damageType
 scoreboard objectives remove Fan.damageType
