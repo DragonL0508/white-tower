@@ -1,0 +1,1 @@
+$summon block_display ~ ~ ~ {view_range:64f,billboard:"fixed",teleport_duration:50,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-1.4f,-0.5f,-2.5f],scale:[1f,9f,5f]},block_state:{$(block_state)},Tags:["leave_door_display"]}

@@ -11,6 +11,12 @@ data merge storage tower:floor.data {type:1}
 #teleporter tag
 data merge storage tower:floor.data {tp:"1-10.normal"}
 
+#leave teleporter tag
+data merge storage tower:floor.data {leave:"1-10.leave"}
+
+#leave door's block state
+data merge storage tower:floor.data {block_state:"Name:\"minecraft:quartz_pillar\",Properties:{axis:\"y\"}"}
+
 #mob spawn tag
 data merge storage tower:floor.data {mob_spawn:"1-10.normal.mob"}
 
