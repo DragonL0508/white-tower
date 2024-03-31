@@ -19,6 +19,8 @@ scoreboard objectives add hp_bar_timer dummy "血量條計時器"
 scoreboard objectives add tmp_maxhp dummy "暫存最大血量"
 scoreboard objectives add tmp_hp dummy "暫存血量"
 
+scoreboard objectives add Fan.FinalDamage dummy "玩家物理攻擊總傷害(統計)"
+scoreboard objectives add Fan.FinalDamage2 dummy "玩家魔法攻擊總傷害(統計)"
 
 scoreboard objectives add hit_amount dummy "擊中數量"
 
