@@ -38,7 +38,7 @@ bossbar set boss_health style progress
     data merge storage hostile.this {type:"minecraft:zombie"}
 
     #head
-    data merge storage hostile.this {head:"skull"}
+    data merge storage hostile.this {head:"player_head"}
 
     #chest
     data merge storage hostile.this {chest:"air"}
