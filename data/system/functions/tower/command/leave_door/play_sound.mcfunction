@@ -1,0 +1,1 @@
+execute as @a[team=intower,limit=1] at @s as @e[type=marker,tag=leave_teleporter,sort=nearest,limit=1] at @s run playsound minecraft:block.chorus_flower.grow master @a[team=intower] ~ ~ ~ 3 0 1
