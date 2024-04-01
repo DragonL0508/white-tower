@@ -23,4 +23,4 @@ $scoreboard players operation $(who) damage $(operation)= result hit_amount
 #加入統計傷害
 $scoreboard players operation @s Fan.FinalDamage += $(who) damage
 
-say sweep_damage
+#say sweep_damage

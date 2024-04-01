@@ -44,4 +44,4 @@ execute if score @s hit_amount matches 2.. if data entity @s SelectedItem.tag.En
 #重置暫時存取的橫掃之刃等級
 scoreboard players reset sweeping.level hit_amount
 
-say sweeping_ench
+#say sweeping_ench
