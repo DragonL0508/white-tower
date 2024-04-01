@@ -19,3 +19,6 @@ execute store result storage this:this result double 0.000001 run scoreboard pla
 execute store result score result hit_amount run data get storage this:this result 1
 #work
 $scoreboard players operation $(who) damage $(operation)= result hit_amount
+
+#加入統計傷害
+$scoreboard players operation @s Fan.FinalDamage = $(who) damage

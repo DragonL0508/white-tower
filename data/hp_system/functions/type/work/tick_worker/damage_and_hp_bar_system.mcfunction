@@ -7,13 +7,9 @@ execute if entity @s[nbt={HurtTime:10s}] on attacker run tag @s add Fan.tmpAtker
 execute if entity @s[nbt={HurtTime:10s}] run scoreboard players operation @s lastAttackerID = @p[tag=Fan.tmpAtker] playerID
 
 
-scoreboard players set #10 Fan.FinalDamage 10
+
 #存入傷害值
 execute if entity @s[nbt={HurtTime:10s}] store result score @s damage on attacker run scoreboard players get @s playerAttackDmg
-#加入統計傷害
-execute if entity @s[nbt={HurtTime:10s}] on attacker run scoreboard players operation #tmp Fan.FinalDamage = @s playerAttackDmg
-execute if entity @s[nbt={HurtTime:10s}] on attacker run scoreboard players operation #tmp Fan.FinalDamage /= #10 Fan.FinalDamage
-execute if entity @s[nbt={HurtTime:10s}] on attacker run scoreboard players operation @s Fan.FinalDamage += #tmp Fan.FinalDamage
 #擴散傷害衰減
 execute if entity @s[tag=find_looking.result,nbt={HurtTime:10s}] on attacker run function hp_system:type/work/tick_worker/sweeping_ench {is_looking:1}
 execute if entity @s[tag=!find_looking.result,nbt={HurtTime:10s}] on attacker run function hp_system:type/work/tick_worker/sweeping_ench {is_looking:0}
