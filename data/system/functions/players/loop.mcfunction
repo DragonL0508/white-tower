@@ -57,8 +57,16 @@
 #player dead event
     execute if score @s dead_event matches 1.. run function system:players/dead
 
+#damage storage
+    scoreboard players operation @s player.damage.total += @s Fan.FinalDamage
+    scoreboard players operation @s player.damage2.total += @s Fan.FinalDamage2
+    scoreboard players operation @s player.damage.round += @s Fan.FinalDamage
+    scoreboard players operation @s player.damage2.round += @s Fan.FinalDamage2
+
 #scoreboard reset - 重製玩家記分板
     data modify storage this potion_level set value []
     scoreboard players reset @s carrot_on_a_stick.right_click
     scoreboard players reset @s sneak
     scoreboard players reset @s dead_event
+    scoreboard players reset @s Fan.FinalDamage
+    scoreboard players reset @s Fan.FinalDamage2

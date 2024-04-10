@@ -16,6 +16,12 @@ scoreboard objectives add player.maxmana dummy
 scoreboard objectives add player.shield dummy
 scoreboard objectives add player.maxshield dummy
 scoreboard objectives add player.potion_level dummy
+
+scoreboard objectives add player.damage.round dummy
+scoreboard objectives add player.damage.total dummy
+scoreboard objectives add player.damage2.round dummy
+scoreboard objectives add player.damage2.total dummy
+
 scoreboard objectives add level dummy {"text": "玩家等級"}
 scoreboard objectives add player.exp level {"text": "玩家經驗值"}
 scoreboard objectives add player.exp.require dummy {"text": "玩家升級需要多少經驗值"}
