@@ -25,8 +25,8 @@ execute as @a if score @s playerID = tmp lastAttackerID run tag @s add Fan.lastA
 #在這裡可以寫下要對擊殺怪物者執行的動作
 #=============================================
 #say @a[tag=Fan.lastAtk] 殺死我的
-
-
+scoreboard players add @a[tag=Fan.lastAtk] player.kills 1
+scoreboard players add @a[tag=Fan.lastAtk] player.kills.round 1
 
 
 

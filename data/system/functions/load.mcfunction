@@ -21,6 +21,8 @@ scoreboard objectives add player.damage.round dummy
 scoreboard objectives add player.damage.total dummy
 scoreboard objectives add player.damage2.round dummy
 scoreboard objectives add player.damage2.total dummy
+scoreboard objectives add player.kills dummy
+scoreboard objectives add player.kills.round dummy
 
 scoreboard objectives add level dummy {"text": "玩家等級"}
 scoreboard objectives add player.exp level {"text": "玩家經驗值"}
