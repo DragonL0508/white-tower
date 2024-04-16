@@ -20,6 +20,9 @@
     execute if score shield.animation temp matches 360 run scoreboard players set shield.animation temp 0
     execute store result storage shield.animation.angle angle int 1.0 run scoreboard players get shield.animation temp
 
+#map particles
+    execute as @e[type=marker,tag=village.particle.chimney] at @s run particle campfire_cosy_smoke ~ ~ ~ 0.5 0 0.5 0 3 force
+
 #effects those always give players
     #effect give @a saturation infinite 100 true
     effect give @a[team=player] resistance infinite 100 true
