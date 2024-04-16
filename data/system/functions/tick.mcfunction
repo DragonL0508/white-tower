@@ -21,7 +21,7 @@
     execute store result storage shield.animation.angle angle int 1.0 run scoreboard players get shield.animation temp
 
 #map particles
-    execute as @e[type=marker,tag=village.particle.chimney] at @s positioned ~ ~0.5 ~ run particle campfire_signal_smoke ~ ~ ~ 0.2 0 0.2 0 1 force
+    execute as @e[type=marker,tag=village.particle.chimney] at @s run particle campfire_cosy_smoke ~ ~ ~ 0 10 0 0.008 0 force
 
 #effects those always give players
     #effect give @a saturation infinite 100 true
