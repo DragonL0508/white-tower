@@ -1,5 +1,5 @@
 tellraw @s {"text": ""}
-tellraw @s [{"text": "§6"},{"selector":"@s"},{"text": " §e回合數據 :"}]
+tellraw @s [{"selector":"@s","color": "gold"},{"text": " §e回合數據 :"}]
 
 tellraw @s {"text": "§8------------------------------"}
 execute if entity @s[gamemode=!spectator] run tellraw @s [{"text": "§7存活: "},{"text": "§a✔"}]
