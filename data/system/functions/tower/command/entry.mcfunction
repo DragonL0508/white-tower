@@ -12,3 +12,9 @@ title @s title {"text": "\uE000"}
 
 function cb:schedule {ticks:10,selector:"@s",command:"tp @s @e[type=marker,tag=floor_teleporter,limit=1]"}
 function cb:schedule {ticks:10,selector:"@s",command:"function system:players/pots/refill"}
+
+#reset self stats
+scoreboard players set @a player.damage.round 0
+scoreboard players set @a player.damage2.round 0
+scoreboard players set @a player.kills.round 0
+scoreboard players set @a player.moneygot.round 0

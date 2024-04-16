@@ -28,7 +28,7 @@ scoreboard players reset wave_cd tower
 function system:tower/command/scheduler/preparing/schedule
 
 #clear players round stats
-scoreboard players reset * player.damage.round
-scoreboard players reset * player.damage2.round
-scoreboard players reset * player.kills.round
-scoreboard players reset * player.moneygot.round
+scoreboard players set @a player.damage.round 0
+scoreboard players set @a player.damage2.round 0
+scoreboard players set @a player.kills.round 0
+scoreboard players set @a player.moneygot.round 0
