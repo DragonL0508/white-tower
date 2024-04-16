@@ -31,6 +31,7 @@ data merge storage hostile.this {isBoss:1}
 
 #hostilebar color & style
 #If you're creating a regular mob (not a boss), you can ignore this.
+data merge storage hostile.this {bossbar_text:"Template"}
 bossbar set boss_health color red
 bossbar set boss_health style progress
 
