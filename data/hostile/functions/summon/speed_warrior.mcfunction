@@ -6,7 +6,7 @@
 data merge storage hostile.this {id:"speed_warrior"}
 
 #display name
-data merge storage hostile.this {name:"{\"text\":\"衝鋒聖衛\",\"color\":\"#FFFFC4\"}"}
+data merge storage hostile.this {name:"{\"text\":\"衝鋒聖衛\",\"color\":\"#FFFFC4\",\"bold\":\"true\"}"}
 
 #health
 data merge storage hostile.this {health:10}
