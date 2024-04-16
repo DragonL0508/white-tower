@@ -5,7 +5,7 @@
 data merge storage hostile.this {id:"testmob"}
 
 #display name
-data merge storage hostile.this {name:"testmob"}
+data merge storage hostile.this {name:"{\"text\":\"TEST\",\"color\":\"yellow\"}"}
 
 #health
 data merge storage hostile.this {health:20}

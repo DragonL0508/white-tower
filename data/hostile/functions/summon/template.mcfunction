@@ -6,7 +6,7 @@
 data merge storage hostile.this {id:"template"}
 
 #display name
-data merge storage hostile.this {name:"-TEMPLATE-"}
+data merge storage hostile.this {name:"{\"text\":\"Template\",\"color\":\"red\"}"}
 
 #health
 data merge storage hostile.this {health:50}
