@@ -1,0 +1,1 @@
+$summon husk ~ ~ ~ {CustomName:'{"text": "$(name)"}'}
