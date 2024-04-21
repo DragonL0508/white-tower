@@ -1,4 +1,5 @@
 #declare storage hostile:list
+#declare storage ability:cache
 
 #create bossbar
 bossbar add boss_health {"text": "Boss血量"}
