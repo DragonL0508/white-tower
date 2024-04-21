@@ -2,6 +2,6 @@ $execute as @a if data entity @s {UUID:$(AngryAt)} run tag @s add prj.target.thi
 
 say I aimed @p[tag=prj.target.this]
 tp @s ~ ~0.1 ~ facing entity @p[tag=prj.target.this] eyes
-tp @s ~ ~ ~ ~ 0
+execute at @s run tp @s ~ ~ ~ ~ 0
 
 tag @a remove prj.target.this
