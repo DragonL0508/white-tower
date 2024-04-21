@@ -21,6 +21,6 @@ $execute as @e[tag=this,team=hostile,limit=1] at @s run function hostile:hostile
 $tag @e[tag=this,team=hostile] add hostile_$(id)
 execute as @e[tag=this,team=hostile] run tag @s remove this
 
-#add this hostile type to hostiles list
+#add this hostile type to hostile list
 data modify storage hostile.list.cache list set from storage hostile.list list
 $function hostile:command/is_type_exist {counter:0, id:$(id)}

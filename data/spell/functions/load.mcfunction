@@ -8,7 +8,6 @@ scoreboard objectives add spell.spelling_time dummy
 scoreboard objectives add spell.what_spell dummy
 scoreboard objectives add spell.this.manacost dummy
 scoreboard objectives add interaction.air dummy
-scoreboard objectives add prj.life dummy {"text": "投射物生命時長"}
 #declare tag spell.left_click
 #declare tag spell.right_click
 #declare tag spelling
