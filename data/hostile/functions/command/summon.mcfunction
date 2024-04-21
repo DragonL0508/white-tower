@@ -16,7 +16,7 @@ $attribute @e[tag=this,team=hostile,limit=1] generic.attack_damage base set $(at
 $attribute @e[tag=this,team=hostile,limit=1] generic.movement_speed base set $(speed)
 $attribute @e[tag=this,team=hostile,limit=1] generic.knockback_resistance base set $(kb)
 
-$scoreboard players set @e[tag=this,team=hostile,limit=1] hostile.ability.cd $(ability_cd)
+#$scoreboard players set @e[tag=this,team=hostile,limit=1] hostile.ability.cd $(ability_cd)
 
 $execute as @e[tag=this,team=hostile,limit=1] at @s run function hostile:hostile/$(id)/on_summon
 
