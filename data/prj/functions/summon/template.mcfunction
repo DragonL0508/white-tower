@@ -14,7 +14,7 @@ data merge storage prj:this {lifetime:200}
 data merge storage prj:this {through_wall:0}
 
 #set target type (0 - none, 1 - hostile, 2 - player)
-data merge storage prj:this {target:0}
+data merge storage prj:this {target:1}
 
 
 #------------summon entity------------
