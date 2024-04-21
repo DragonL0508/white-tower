@@ -1,0 +1,1 @@
+$function hostile:hostile/$(id)/ability/$(ability)/start
