@@ -5,7 +5,7 @@ data merge storage prj:this {id:"1_holy_bear_attack"}
 data merge storage prj:this {display_name:"聖白熊"}
 
 #set speed (blocks per tick)
-data merge storage prj:this {speed:0.2}
+data merge storage prj:this {speed:0.35}
 
 #set life time (tick)
 data merge storage prj:this {lifetime:200}

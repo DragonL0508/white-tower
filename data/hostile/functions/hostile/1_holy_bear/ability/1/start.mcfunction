@@ -1,2 +1,2 @@
-say ability 1 start !
-particle large_smoke ~ ~ ~ 0 5 0 0 20 force
+function prj:summon/1_holy_bear_attack
+playsound minecraft:entity.polar_bear.warning master @a[team=intower] ~ ~ ~ 2 0.7 1
