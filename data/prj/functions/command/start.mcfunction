@@ -17,5 +17,8 @@ $function prj:projectiles/$(id)/on_summon
 data modify storage prj:list.cache list set from storage prj:list list
 $function prj:command/is_type_exist {counter:0, id:$(id)}
 
+#set ID
+scoreboard players operation @s prj.id > * prj.id
+
 #remove this.prj tag
 tag @s remove prj.this
