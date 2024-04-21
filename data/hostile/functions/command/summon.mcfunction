@@ -1,6 +1,8 @@
 #By DragonL
 $data merge storage hostile:$(id) {id:$(id),name:$(name),health:$(health),atk:$(atk),speed:$(speed),kb:$(kb),ability_counts:$(ability_counts),ability_cd:$(ability_cd),isBoss:$(isBoss),bossbar_text:"$(bossbar_text)"}
 
+say summon
+
 #$summon $(type) ~ ~ ~ {PortalCooldown:$(health),Tags:["this"],Team:hostile,CustomName:'$(name)',HandDropChances:[0.0f,0.0f],ArmorDropChances:[0.0f,0.0f,0.0f,0.0f]}
 
 #$execute if data storage hostile:$(id) {isBoss:1} run function hostile:command/is_boss with storage hostile:$(id)
