@@ -5,7 +5,7 @@ data merge storage prj:this {id:"template"}
 data merge storage prj:this {display_name:"prj_name"}
 
 #set speed (blocks per tick)
-data merge storage prj:this {speed:0.1}
+data merge storage prj:this {speed:0.5}
 
 #set life time (tick)
 data merge storage prj:this {lifetime:200}
