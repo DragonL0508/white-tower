@@ -14,4 +14,4 @@ execute if score @s prj.target_type matches 1 run function prj:command/hit_detec
 execute if score @s prj.target_type matches 2 run function prj:command/hit_detection/player
 
 #life remove
-scoreboard players remove @s prj.life 1
+#scoreboard players remove @s prj.life 1
