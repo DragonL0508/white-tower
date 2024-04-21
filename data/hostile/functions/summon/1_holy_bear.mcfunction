@@ -15,7 +15,7 @@ data merge storage hostile:this {health:50}
 data merge storage hostile:this {atk:4}
 
 #movement speed
-data merge storage hostile:this {speed:0.2}
+data merge storage hostile:this {speed:0.32}
 
 #knockback resistance
 data merge storage hostile:this {kb:0}
