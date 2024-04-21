@@ -1,6 +1,5 @@
-tag @s add prj.this
+$execute as @a if data entity @s {UUID:$(AngryAt)} run tag @s add prj.target.this
 
-$execute as @a if data entity @s {UUID:$(AngryAt)} run say target me !
-$execute as @a if data entity @s {UUID:$(AngryAt)} run tp @e[tag=prj.this] ~ ~ ~ facing entity @s eyes
+tp @s ~ ~ ~ facing entity @p[tag=prj.target.this] eyes
 
-tag @s remove prj.this
+tag @a remove prj.target.this
