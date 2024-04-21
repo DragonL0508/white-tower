@@ -3,7 +3,7 @@ tag @s add prj
 $data merge entity @s {CustomName:'{"text": "$(display_name)"}'}
 
 #add a new storage for this prj
-$data merge storage prj:$(id) {id:$(id),display_name:$(display_name),speed:$(speed),lifetime:$(lifetime),through_wall:$(through_wall)}
+$data merge storage prj:$(id) {id:$(id),display_name:$(display_name),speed:$(speed),lifetime:$(lifetime),through_wall:$(through_wall),damage:$(damage)}
 
 #set score value
 $scoreboard players set @s prj.life $(lifetime)
