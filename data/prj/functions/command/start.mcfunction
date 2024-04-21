@@ -8,7 +8,7 @@ $data merge storage prj:$(id) {id:$(id),display_name:$(display_name),speed:$(spe
 #set score value
 $scoreboard players set @s prj.life $(lifetime)
 $scoreboard players set @s prj.through_wall $(through_wall)
-$scoreboard players set @s prj.target_type $(target_type)
+$scoreboard players set @s prj.target_type $(target)
 
 #execute on summon event
 $function prj:projectiles/$(id)/on_summon
