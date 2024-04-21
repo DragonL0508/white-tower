@@ -2,6 +2,8 @@ $execute if score @s prj.life matches 0 run function prj:projectiles/$(id)/on_de
 execute if score @s prj.life matches 0 run kill @s
 
 $function prj:projectiles/$(id)/tick
+#life remove
+function prj:command/remove_lifetime
 
 #move
 $tp @s ^ ^ ^$(speed)
@@ -12,6 +14,3 @@ $execute if score @s prj.through_wall matches 0 run function prj:command/hit_det
 #hit target
 execute if score @s prj.target_type matches 1 run function prj:command/hit_detection/hostile
 execute if score @s prj.target_type matches 2 run function prj:command/hit_detection/player
-
-#life remove
-function prj:command/remove_lifetime
