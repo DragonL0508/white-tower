@@ -1,0 +1,1 @@
+$function hp_system:damage_with_uuid {uuid:$(Owner),type:"damage2",damage:$(damage),limit:$(limit),distance:$(distance)}
