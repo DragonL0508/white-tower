@@ -13,4 +13,4 @@ $execute if score @s prj.through_wall matches 0 run function prj:command/hit_det
 
 #hit target
 $execute if score @s prj.target_type matches 1 run function prj:command/hit_detection/hostile with storage prj:$(id)
-execute if score @s prj.target_type matches 2 run function prj:command/hit_detection/player
+$execute if score @s prj.target_type matches 2 run function prj:command/hit_detection/player with storage prj:$(id)
