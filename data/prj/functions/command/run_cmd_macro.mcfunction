@@ -12,5 +12,5 @@ $tp @s ^ ^ ^$(speed)
 $execute if score @s prj.through_wall matches 0 run function prj:command/hit_detection/block with storage prj:$(id)
 
 #hit target
-execute if score @s prj.target_type matches 1 run function prj:command/hit_detection/hostile
+$execute if score @s prj.target_type matches 1 run function prj:command/hit_detection/hostile with storage prj:$(id)
 execute if score @s prj.target_type matches 2 run function prj:command/hit_detection/player
