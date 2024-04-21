@@ -17,9 +17,8 @@ $function prj:projectiles/$(id)/on_summon
 data modify storage prj:list.cache list set from storage prj:list list
 $function prj:command/is_type_exist {counter:0, id:$(id)}
 
-#set ID
-scoreboard players operation @s prj.id > * prj.id
-scoreboard players add @s prj.id 1
+#create it's own storage
+$data merge storage prj:number_id_$(number_id) {Owner:"$(UUID)"}
 
 #remove this.prj tag
 tag @s remove prj.this

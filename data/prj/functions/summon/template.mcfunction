@@ -20,5 +20,7 @@ data merge storage prj:this {target:2}
 #------------summon entity------------
 summon marker ~ ~ ~ {Tags:["prj.this"]}
 
+data modify storage prj:this owner set from entity @s UUID
+execute as @e[tag=prj.this] run function prj:command/set_id
 execute as @e[tag=prj.this] at @s run function prj:command/start with storage prj:this
 #-------------------------------------
