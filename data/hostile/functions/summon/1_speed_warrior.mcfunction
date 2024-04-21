@@ -3,7 +3,7 @@
 #THIS IS A TEMPLATE FILE
 
 #name ID
-data merge storage hostile.this {id:"speed_warrior"}
+data merge storage hostile.this {id:"1_speed_warrior"}
 
 #display name
 data merge storage hostile.this {name:"{\"text\":\"衝鋒聖衛\",\"color\":\"#FFFFC4\",\"bold\": true}"}
