@@ -1,0 +1,1 @@
+$execute as @e[tag=prj,tag=prj.$(id)] at @s run function prj:command/run_cmd_macro with storage prj:$(id)

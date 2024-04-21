@@ -4,7 +4,7 @@ title @a[team=intower] title {"text": "§7關卡失敗"}
 execute as @a[team=intower] at @s run playsound entity.generic.explode master @s ~ ~ ~ 2 1 1
 
 #players
-execute if score floor.type tower matches 1 as @a run function system:tower/command/scheduler/fighting/messages/fight_end
+execute if score floor.type tower matches 1 as @a[team=intower] run function system:tower/command/scheduler/fighting/messages/fight_end
 
 #reset
 tag @a remove all_players_dead

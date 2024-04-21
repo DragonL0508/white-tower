@@ -6,7 +6,7 @@ execute as @a[team=intower] at @s run playsound entity.firework_rocket.large_bla
 bossbar set timelimit name [{"text":"第","color":"yellow"},{"score":{"name":"floor","objective":"tower"},"color":"#FFFFCC"},{"text":"§e層 - §f§l通關"}]
 
 #players
-execute if score floor.type tower matches 1 as @a run function system:tower/command/scheduler/fighting/messages/fight_end
+execute if score floor.type tower matches 1 as @a[team=intower] run function system:tower/command/scheduler/fighting/messages/fight_end
 tp @a[gamemode=spectator,team=intower] @r[gamemode=adventure,team=intower]
 gamemode adventure @a[team=intower]
 
