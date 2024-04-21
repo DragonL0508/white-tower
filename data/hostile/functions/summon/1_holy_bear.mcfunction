@@ -48,8 +48,8 @@ bossbar set boss_health style progress
     #leg
     data merge storage hostile:this {legs:"air"}
     
-    #foot
-    data merge storage hostile:this {feet:"air"}
+    #feet
+    data merge storage hostile:this {feet:"leather_boots{Enchantments:[{id:\"minecraft:feather_falling\",lvl:255s}]}"}
 
     #mainhand
     data merge storage hostile:this {mainhand:"air"}
