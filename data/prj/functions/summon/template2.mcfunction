@@ -11,7 +11,7 @@ data merge storage prj:this {speed:0.5}
 data merge storage prj:this {lifetime:200}
 
 #set damage
-data merge storage prj:this {damage:10}
+data merge storage prj:this {damage:5}
 
 #can through wall? (0 - false, 1 - true)
 data merge storage prj:this {through_wall:0}
