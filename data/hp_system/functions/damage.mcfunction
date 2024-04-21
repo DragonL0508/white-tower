@@ -25,15 +25,19 @@ scoreboard objectives add Fan.damageType dummy "傷害類別.暫存"
 scoreboard players set 10 Fan.damageType 10
 #check type
 $scoreboard players set $(type) Fan.damageType 1
+#amount
+execute store result score amount Fan.damageType if entity @e[type=!#hp_system:nothing,tag=Fan.target]
+$scoreboard players set #tmp Fan.damageType $(damage)
+scoreboard players operation #tmp Fan.damageType *= amount Fan.damageType
 #damage
 $execute if score damage Fan.damageType matches 1 run scoreboard players add @e[type=!#hp_system:nothing,tag=Fan.target] $(type) $(damage)
 #add final damage score
-$execute if score damage Fan.damageType matches 1 run scoreboard players add @s Fan.FinalDamage $(damage)
+execute if score damage Fan.damageType matches 1 run scoreboard players operation @s Fan.FinalDamage += #tmp Fan.damageType
 execute if score damage Fan.damageType matches 1 as @e[type=!#hp_system:nothing,tag=Fan.target] run scoreboard players operation @s damage *= 10 Fan.damageType
 #damage2
 $execute if score damage2 Fan.damageType matches 1 run scoreboard players add @e[type=!#hp_system:nothing,tag=Fan.target] $(type) $(damage)
 #add final damage2 score
-$execute if score damage2 Fan.damageType matches 1 run scoreboard players add @s Fan.FinalDamage2 $(damage)
+execute if score damage2 Fan.damageType matches 1 run scoreboard players operation @s Fan.FinalDamage2 += #tmp Fan.damageType
 #reset scoreboard and remove object
 scoreboard players reset * Fan.damageType
 scoreboard objectives remove Fan.damageType
