@@ -8,7 +8,7 @@ data merge storage prj:this {display_name:"聖白熊"}
 data merge storage prj:this {speed:0.7}
 
 #set life time (tick)
-data merge storage prj:this {lifetime:70}
+data merge storage prj:this {lifetime:50}
 
 #set damage
 data merge storage prj:this {damage:0}
