@@ -5,3 +5,5 @@ playsound minecraft:entity.warden.sonic_boom master @a[distance=..20,team=intowe
 
 particle minecraft:end_rod ~ ~ ~ 0 0 0 0.2 50 force
 particle minecraft:flash ~ ~ ~ 0 0 0 1 2 force
+
+execute as @a[distance=..3] run damage @s 8 generic
