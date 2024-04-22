@@ -1,3 +1,3 @@
 particle heart ~ ~ ~ 0 0 0 0 1 force
 
-tp @s ~ ~ ~ ~ ~-0.1
+tp @s ~ ~ ~ ~ ~1
