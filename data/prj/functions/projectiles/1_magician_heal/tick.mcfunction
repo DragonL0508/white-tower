@@ -1,3 +1,3 @@
-particle dust 1 1 1 2 ~ ~ ~ 0 0 0 0 1 force
+particle totem_of_undying ~ ~ ~ 0 0 0 0.05 1 force
 
 tp @s ~ ~ ~ ~ ~2
