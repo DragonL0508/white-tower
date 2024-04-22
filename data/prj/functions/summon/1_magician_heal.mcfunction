@@ -21,7 +21,7 @@ data merge storage prj:this {target:0}
 
 
 #------------summon entity------------
-summon item_display ~ ~ ~ {Tags:["prj.this"],item:{id:"minecraft:enchanted_golden_apple",Count:1b},teleport_duration:1,billboard:"horizontal"}
+summon item_display ~ ~ ~ {Tags:["prj.this"],item:{id:"minecraft:firework_star",Count:1b},teleport_duration:1,billboard:"horizontal"}
 
 data modify storage prj:this owner set from entity @s UUID
 execute as @e[tag=prj.this] run function prj:command/set_id
