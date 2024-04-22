@@ -9,7 +9,7 @@ data merge storage hostile:this {id:"1_magician_vex"}
 data merge storage hostile:this {name:"{\"text\":\"投擲者\",\"color\":\"#FFFFC4\",\"bold\": true}"}
 
 #health
-data merge storage hostile:this {health:10}
+data merge storage hostile:this {health:5}
 
 #attack damage
 data merge storage hostile:this {atk:0}
