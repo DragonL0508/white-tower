@@ -14,14 +14,14 @@ data merge storage prj:this {lifetime:50}
 data merge storage prj:this {damage:0}
 
 #can through wall? (0 - false, 1 - true)
-data merge storage prj:this {through_wall:1}
+data merge storage prj:this {through_wall:0}
 
 #set target type (0 - none, 1 - hostile, 2 - player)
 data merge storage prj:this {target:0}
 
 
 #------------summon entity------------
-summon item_display ~ ~ ~ {Tags:["prj.this"],item:{id:"minecraft:enchanted_golden_apple"}}
+summon item_display ~ ~ ~ {Tags:["prj.this"],item:{id:"minecraft:enchanted_golden_apple",Count:1b}}
 
 data modify storage prj:this owner set from entity @s UUID
 execute as @e[tag=prj.this] run function prj:command/set_id
