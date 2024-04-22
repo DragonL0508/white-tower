@@ -5,7 +5,7 @@ data merge storage prj:this {id:"1_magician_heal"}
 data merge storage prj:this {display_name:"聖白使者"}
 
 #set speed (blocks per tick)
-data merge storage prj:this {speed:0.6}
+data merge storage prj:this {speed:0.8}
 
 #set life time (tick)
 data merge storage prj:this {lifetime:50}
@@ -21,7 +21,7 @@ data merge storage prj:this {target:0}
 
 
 #------------summon entity------------
-summon marker ~ ~ ~ {Tags:["prj.this"]}
+summon item_display ~ ~ ~ {Tags:["prj.this"],item:{id:"minecraft:enchanted_golden_apple"}}
 
 data modify storage prj:this owner set from entity @s UUID
 execute as @e[tag=prj.this] run function prj:command/set_id

@@ -1,3 +1,3 @@
-particle heart ~ ~ ~ 0 0 0 0 1 force
+particle small_flame ~ ~ ~ 0 0 0 0 1 force
 
-tp @s ~ ~ ~ ~ ~1
+tp @s ~ ~ ~ ~ ~2
