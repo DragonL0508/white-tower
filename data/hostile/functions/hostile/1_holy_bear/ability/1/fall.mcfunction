@@ -7,3 +7,5 @@ particle minecraft:end_rod ~ ~ ~ 0 0 0 0.2 50 force
 particle minecraft:flash ~ ~ ~ 0 0 0 1 2 force
 
 execute as @a[distance=..3] run damage @s 8 generic
+
+tag @s remove jump
