@@ -15,7 +15,7 @@ data merge storage hostile:this {health:20}
 data merge storage hostile:this {atk:0}
 
 #movement speed
-data merge storage hostile:this {speed:0.28}
+data merge storage hostile:this {speed:0.2}
 
 #knockback resistance
 data merge storage hostile:this {kb:0}
@@ -24,7 +24,7 @@ data merge storage hostile:this {kb:0}
 data merge storage hostile:this {ability_counts:1}
 
 #ability cooldown (tick)
-data merge storage hostile:this {ability_cd:100}
+data merge storage hostile:this {ability_cd:130}
 
 #is a boss? (true = 1, false = 0)
 data merge storage hostile:this {isBoss:0}
