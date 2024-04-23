@@ -6,7 +6,7 @@
 data merge storage hostile:this {id:"1_magician"}
 
 #display name
-data merge storage hostile:this {name:"{\"text\":\"聖白使者\",\"color\":\"#FFFFC4\",\"bold\": true}"}
+data merge storage hostile:this {name:"{\"text\":\"聖白喚靈師\",\"color\":\"#FFFFC4\",\"bold\": true}"}
 
 #health
 data merge storage hostile:this {health:20}
