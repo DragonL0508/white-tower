@@ -46,13 +46,13 @@ bossbar set boss_health style progress
     data merge storage hostile:this {chest:"leather_chestplate{display:{color:16777215}}"}
 
     #leg
-    data merge storage hostile:this {legs:"air"}
+    data merge storage hostile:this {legs:"leather_leggings{display:{color:16777215}}"}
     
     #foot
-    data merge storage hostile:this {feet:"leather_boots{display:{color:16776960}}"}
+    data merge storage hostile:this {feet:"leather_boots{display:{color:16777215}}"}
 
     #mainhand
-    data merge storage hostile:this {mainhand:"minecraft:wooden_sword{CustomModelData:110}"}
+    data merge storage hostile:this {mainhand:"minecraft:wooden_sword{CustomModelData:100}"}
 
     #offhand
     data merge storage hostile:this {offhand:"shield{BlockEntityTag:{Base:0}}"}
