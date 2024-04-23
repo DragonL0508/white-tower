@@ -1,0 +1,1 @@
+#The function will be triggered upon the mob dead.
