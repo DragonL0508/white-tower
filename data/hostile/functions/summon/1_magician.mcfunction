@@ -12,7 +12,7 @@ data merge storage hostile:this {name:"{\"text\":\"聖白喚靈師\",\"color\":\
 data merge storage hostile:this {health:20}
 
 #attack damage
-data merge storage hostile:this {atk:0}
+data merge storage hostile:this {atk:4}
 
 #movement speed
 data merge storage hostile:this {speed:0.15}
