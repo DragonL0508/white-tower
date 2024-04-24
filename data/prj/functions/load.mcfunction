@@ -9,3 +9,4 @@ scoreboard objectives add prj.target_type dummy {"text": "投射物目標類別"
 scoreboard objectives add prj.id dummy {"text": "投射物ID"}
 scoreboard objectives add prj.damage dummy {"text": "投射物預設傷害"}
 scoreboard objectives add draw dummy
+scoreboard objectives add bounce dummy

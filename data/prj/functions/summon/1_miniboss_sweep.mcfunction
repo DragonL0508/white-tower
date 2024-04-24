@@ -5,10 +5,10 @@ data merge storage prj:this {id:"1_miniboss_sweep"}
 data merge storage prj:this {display_name:"札爾修特"}
 
 #set speed (blocks per tick)
-data merge storage prj:this {speed:0.55}
+data merge storage prj:this {speed:0.3}
 
 #set life time (tick)
-data merge storage prj:this {lifetime:50}
+data merge storage prj:this {lifetime:360}
 
 #set damage
 data merge storage prj:this {damage:6}
