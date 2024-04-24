@@ -9,7 +9,7 @@ data merge storage hostile:this {id:"1_miniboss_clone"}
 data merge storage hostile:this {name:"[{\"text\":\"神聖劍士 \",\"color\":\"#FFFFC4\",\"bold\": true},{\"text\":\"札爾修特\",\"color\":\"#FFFFC4\",\"bold\": true}]"}
 
 #health
-data merge storage hostile:this {health:10}
+data merge storage hostile:this {health:5}
 
 #attack damage
 data merge storage hostile:this {atk:0}
