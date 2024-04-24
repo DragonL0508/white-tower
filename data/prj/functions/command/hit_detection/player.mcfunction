@@ -2,7 +2,7 @@ execute positioned ~-0.05 ~-0.05 ~-0.05 as @a[gamemode=adventure,dx=0] positione
 
 #damage
 $execute as @a[tag=this.target] run damage @s $(damage) generic
-execute as @a[tag=this.target] run say hit
+#execute as @a[tag=this.target] run say hit
 tag @e remove this.target
 
 #commands

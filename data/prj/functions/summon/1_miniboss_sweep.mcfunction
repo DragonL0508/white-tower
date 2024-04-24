@@ -22,6 +22,7 @@ data merge storage prj:this {target:2}
 
 #------------summon entity------------
 summon marker ~ ~ ~ {Tags:["prj.this"]}
+particle sweep_attack ^ ^1 ^0.5 0 0 0 0 1 force
 
 data modify storage prj:this owner set from entity @s UUID
 execute as @e[tag=prj.this] run function prj:command/set_id
