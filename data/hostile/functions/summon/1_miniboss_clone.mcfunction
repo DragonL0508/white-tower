@@ -24,7 +24,7 @@ data merge storage hostile:this {kb:1}
 data merge storage hostile:this {ability_counts:2}
 
 #ability cooldown (tick)
-data merge storage hostile:this {ability_cd:70}
+data merge storage hostile:this {ability_cd:35}
 
 #is a boss? (true = 1, false = 0)
 data merge storage hostile:this {isBoss:0}
