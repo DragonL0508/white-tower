@@ -1,0 +1,1 @@
+function hostile:summon/1_wolf
