@@ -6,6 +6,7 @@ bossbar add boss_health {"text": "Boss血量"}
 
 scoreboard objectives add hostile.ability.cd dummy {"text": "敵方技能使用CD"}
 scoreboard objectives add 1_magician_id dummy
+scoreboard objectives add summoned_entity_counts dummy
 
 scoreboard objectives add ASXVelocity dummy
 scoreboard objectives add ASYVelocity dummy
