@@ -2,5 +2,5 @@
 scoreboard players set @s hostile.ability.cd 40
 
 #Group ID system
-scoreboard players operation @s 1_magician_id > * 1_magician_id
-scoreboard players add @s 1_magician_id 1
+scoreboard players operation @s hostile_id > * hostile_id
+scoreboard players add @s hostile_id 1
