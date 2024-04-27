@@ -1,6 +1,6 @@
 #is level end? (timeout & all players dead)
-say test
-execute if score floor.timelimit tower matches -1 run function system:tower/command/scheduler/fighting/lose {reason:"時間到"}
+execute if score floor.timelimit tower matches -1 run data merge storage tower:floor.data {reason:"時間到"}
+execute if score floor.timelimit tower matches -1 run function system:tower/command/scheduler/fighting/lose with storage tower:floor.data
 execute unless entity @a[team=intower,gamemode=adventure] unless entity @a[tag=all_players_dead] run schedule function system:tower/command/scheduler/fighting/all_players_dead 3s
 
 execute unless entity @a[team=intower,gamemode=adventure] run tag @a[team=intower] add all_players_dead
