@@ -5,10 +5,10 @@ data merge storage prj:this {id:"1_boss_tracking_orb"}
 data merge storage prj:this {display_name:"札爾修斯"}
 
 #set speed (blocks per tick)
-data merge storage prj:this {speed:0.7}
+data merge storage prj:this {speed:0.5}
 
 #set life time (tick)
-data merge storage prj:this {lifetime:80}
+data merge storage prj:this {lifetime:100}
 
 #set damage
 data merge storage prj:this {damage:0}
