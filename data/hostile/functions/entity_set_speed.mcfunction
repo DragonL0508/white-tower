@@ -14,6 +14,6 @@ scoreboard players operation @s ASXVelocity -= @s ASX1
 scoreboard players operation @s ASYVelocity -= @s ASY1
 scoreboard players operation @s ASZVelocity -= @s ASZ1
 
-#execute store result entity @s Motion[0] double -0.0001 run scoreboard players operation @s ASXVelocity *= @s ASSpeed
-#execute store result entity @s Motion[1] double -0.0001 run scoreboard players operation @s ASYVelocity *= @s ASSpeed
-#execute store result entity @s Motion[2] double -0.0001 run scoreboard players operation @s ASZVelocity *= @s ASSpeed
+execute store result entity @s Motion[0] double -0.0001 run scoreboard players operation @s ASXVelocity *= @s ASSpeed
+execute store result entity @s Motion[1] double -0.0001 run scoreboard players operation @s ASYVelocity *= @s ASSpeed
+execute store result entity @s Motion[2] double -0.0001 run scoreboard players operation @s ASZVelocity *= @s ASSpeed
