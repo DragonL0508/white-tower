@@ -3,7 +3,7 @@ execute store result score @s ASYVelocity run data get entity @s Pos[1] 10000
 execute store result score @s ASZVelocity run data get entity @s Pos[2] 10000
 tellraw DragonL {"score":{"name":"@s","objective":"ASXVelocity"}}
 
-tp @s ^ ^ ^0.2
+tp @s ^ ^ ^1
 
 execute store result score @s ASX1 run data get entity @s Pos[0] 10000
 execute store result score @s ASY1 run data get entity @s Pos[1] 10000
