@@ -6,6 +6,7 @@ execute as @a[team=intower] at @s run playsound block.dripstone_block.break mast
 #reset stuffs
 scoreboard players reset wave_cd tower
 schedule clear system:tower/command/waves/wave_cd
+$bossbar set timelimit max $(timelimit)
 
 #summon
 execute store result storage tower:floor.data wave int 1 run scoreboard players get wave tower
