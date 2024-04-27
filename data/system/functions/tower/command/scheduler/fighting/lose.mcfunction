@@ -6,6 +6,9 @@ execute as @a[team=intower] at @s run playsound entity.generic.explode master @s
 #players
 execute if score floor.type tower matches 1 as @a[team=intower] run function system:tower/command/scheduler/fighting/messages/fight_end
 
+#execute library commands
+$function system:tower/floors/$(floor)/end
+
 #reset
 tag @a remove all_players_dead
 scoreboard players reset state tower

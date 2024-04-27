@@ -15,6 +15,9 @@ function system:tower/command/waves/start with storage tower:floor.data
 #bossbar setup
 $bossbar set timelimit max $(timelimit)
 
+#execute floor lib
+$function system:tower/floors/$(floor)/start
+
 #next scheduler
 scoreboard players set state tower 2
 function system:tower/command/scheduler/fighting/schedule

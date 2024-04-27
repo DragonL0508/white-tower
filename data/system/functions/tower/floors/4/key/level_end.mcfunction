@@ -1,0 +1,1 @@
+execute as @a[distance=..3] if data entity @s SelectedItem{tag:{key:1b}} run function system:tower/command/scheduler/fighting/win

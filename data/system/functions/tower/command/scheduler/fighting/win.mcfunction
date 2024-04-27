@@ -14,6 +14,9 @@ gamemode adventure @a[team=intower]
 #door's animations
 function system:tower/command/leave_door/start
 
+#execute library commands
+$function system:tower/floors/$(floor)/end
+
 #commands
 scoreboard players set state tower 3
 schedule clear system:tower/command/scheduler/fighting/schedule

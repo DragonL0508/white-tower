@@ -1,0 +1,1 @@
+$function system:tower/floors/$(floor)/tick
