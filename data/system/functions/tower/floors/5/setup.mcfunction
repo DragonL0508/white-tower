@@ -26,6 +26,9 @@ data merge storage tower:floor.data {boss_spawn:"5.boss"}
 #boss title (ignore this if this is not a boss level)
 data merge storage tower:floor.data {boss_title:"{\"text\": \"神聖劍士 - 札爾修特\",\"color\": \"#FFFFC4\"}"}
 
+#boss' hostile ID
+data merge storage tower:floor.data {boss_id:"1_miniboss"}
+
 #level rewards
 data merge storage tower:floor.data {xp_rewards:100}
 
