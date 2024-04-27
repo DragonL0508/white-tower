@@ -17,6 +17,9 @@ function system:tower/command/leave_door/start
 #execute library commands
 $function system:tower/floors/$(floor)/end
 
+#clear stuffs
+function hostile:remove {target:"@e[team=hostile]"}
+
 #commands
 scoreboard players set state tower 3
 schedule clear system:tower/command/scheduler/fighting/schedule
