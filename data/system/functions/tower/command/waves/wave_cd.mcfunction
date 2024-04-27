@@ -6,5 +6,6 @@ function system:tower/command/waves/wavecd_title with storage tower:floor.data
 
 scoreboard players remove wave_cd tower 1
 
-execute if data storage tower:floor.data {type:1} if score wave_cd tower matches -1 run function system:tower/command/waves/start_new_wave
-execute if data storage tower:floor.data {type:2} if score wave_cd tower matches -1 run function system:tower/command/waves/start_new_wave_boss with storage tower:floor.data
+execute if data storage tower:floor.data {type:2} if score wave tower > floor.waves tower if score wave_cd tower matches -1 run return run function system:tower/command/waves/start_new_wave_boss with storage tower:floor.data
+
+execute if score wave_cd tower matches -1 run function system:tower/command/waves/start_new_wave
