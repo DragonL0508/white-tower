@@ -1,4 +1,4 @@
-tp @s ~ ~ ~
+tp @s ^ ^ ^0.01
 
 execute store result score @s ASXVelocity run data get entity @s Pos[0] 10000
 execute store result score @s ASYVelocity run data get entity @s Pos[1] 10000
