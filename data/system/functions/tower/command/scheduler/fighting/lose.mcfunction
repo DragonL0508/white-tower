@@ -10,7 +10,7 @@ execute if score floor.type tower matches 1 as @a[team=intower] run function sys
 tag @a remove all_players_dead
 scoreboard players reset state tower
 team join prepared @a[team=intower]
-function hostile:hostile/remove {target:"@e[team=hostile]"}
+function hostile:remove {target:"@e[team=hostile]"}
 kill @e[type=item]
 schedule clear system:tower/command/scheduler/fighting/schedule
 schedule clear system:tower/command/waves/wave_cd
