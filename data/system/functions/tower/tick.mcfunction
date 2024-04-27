@@ -7,5 +7,5 @@ execute if score state tower matches 3 run function system:tower/command/game_en
 #tower entry & getout
 execute as @e[type=marker,tag=entry] at @s run function system:tower/entry_portal
 
-#show timelimit bossbar to intower players
+#show timelimit bossbar
 bossbar set timelimit players @a[team=intower]

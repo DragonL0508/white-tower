@@ -6,7 +6,7 @@ data merge storage tower:floor.data {waves:3}
 
 #floor type?
 #1 - normal, 2 - boss fight, 3 - puzzle
-data merge storage tower:floor.data {type:1}
+data merge storage tower:floor.data {type:3}
 
 #teleporter tag
 data merge storage tower:floor.data {tp:"1-10.normal"}

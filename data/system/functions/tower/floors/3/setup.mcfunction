@@ -6,10 +6,10 @@ data merge storage tower:floor.data {waves:3}
 
 #floor type?
 #1 - normal, 2 - boss fight, 3 - puzzle
-data merge storage tower:floor.data {type:1}
+data merge storage tower:floor.data {type:3}
 
 #teleporter tag
-data merge storage tower:floor.data {tp:"1-10.normal"}
+data merge storage tower:floor.data {tp:"1-10.puzzel"}
 
 #leave teleporter tag
 data merge storage tower:floor.data {leave:"1-10.leave"}
@@ -18,7 +18,7 @@ data merge storage tower:floor.data {leave:"1-10.leave"}
 data merge storage tower:floor.data {block_state:"Name:\"minecraft:quartz_pillar\",Properties:{axis:\"y\"}"}
 
 #mob spawn tag
-data merge storage tower:floor.data {mob_spawn:"1-10.normal.mob"}
+data merge storage tower:floor.data {mob_spawn:"1-10.puzzel.mob"}
 
 #boss spawn tag (ignore this if this is not a boss level)
 data merge storage tower:floor.data {boss_spawn:"5.boss"}
