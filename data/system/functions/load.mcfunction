@@ -50,9 +50,12 @@ scoreboard objectives add attribute.RES dummy
 scoreboard objectives add attribute.LUC dummy
 scoreboard objectives add attribute.INT dummy
 
+scoreboard objectives add give_player_damage dummy
+
 #declare tag in_meditation
 #declare storage tower:floor.data
 #declare storage tower:waves.cache
+#declare storage player:cache
 
 #create bossbar
 bossbar add timelimit {"text": ""}

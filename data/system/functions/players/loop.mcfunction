@@ -63,6 +63,14 @@
     scoreboard players operation @s player.damage.round += @s Fan.FinalDamage
     scoreboard players operation @s player.damage2.round += @s Fan.FinalDamage2
 
+#give player damage
+    execute store result score @s temp run data get entity @s Health
+    scoreboard players operation @s temp -= @s give_player_damage
+    execute store result storage player:cache target_hp int 1 run scoreboard players get @s temp
+    execute store result storage player:cache max_hp int 1 run attribute @s generic.max_health get 1
+
+    execute if score @s give_player_damage matches -2147483648..2147483647 run function system:players/give_damage with storage player:cache
+
 #scoreboard reset - 重製玩家記分板
     data modify storage this potion_level set value []
     scoreboard players reset @s carrot_on_a_stick.right_click
@@ -70,3 +78,4 @@
     scoreboard players reset @s dead_event
     scoreboard players reset @s Fan.FinalDamage
     scoreboard players reset @s Fan.FinalDamage2
+    scoreboard players reset @s give_player_damage
