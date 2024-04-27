@@ -1,0 +1,1 @@
+execute if score @s 1_magician_id = @e[tag=magician_me,limit=1] 1_magician_id run tag @s add check
