@@ -1,1 +1,2 @@
 $bossbar set timelimit name [{"text": "§e遊戲將在"},{"text": "$(preparing_timer)","color": "#FFFFCC"},{"text": "§e秒後開始"}]
+execute store result bossbar timelimit value run scoreboard players get timer tower
