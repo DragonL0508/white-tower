@@ -1,6 +1,6 @@
 #check vex counts
 tag @s add magician_me
-execute as @e[tag=hostile_1_magician_vex] if score @s 1_magician_id = @e[tag=magician_me,limit=1] 1_magician_id run tag @s add check
+execute as @e[tag=hostile_1_magician_vex] if score @s 1_magician_id = @e[tag=magician_me,limit=1] 1_magician_id run tag @s add vex_check
 execute store result score @s summoned_entity_counts run execute if entity @e[tag=vex_check]
 tag @e remove vex_check
 tag @s remove magician_me
