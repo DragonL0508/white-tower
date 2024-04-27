@@ -20,7 +20,7 @@ data merge storage hostile:this {speed:0.27}
 data merge storage hostile:this {kb:1}
 
 #ability counts
-data merge storage hostile:this {ability_counts:2}
+data merge storage hostile:this {ability_counts:1}
 
 #ability cooldown (tick)
 data merge storage hostile:this {ability_cd:140}
