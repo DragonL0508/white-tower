@@ -6,7 +6,7 @@ $function prj:projectiles/$(id)/tick
 function prj:command/remove_lifetime
 
 #move
-$tp @s ^ ^ ^$(speed)
+$tp @s[tag=!freeze] ^ ^ ^$(speed)
 
 #hit block
 $execute if score @s prj.through_wall matches 0 run function prj:command/hit_detection/block with storage prj:$(id)
