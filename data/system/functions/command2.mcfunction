@@ -1,0 +1,1 @@
+$data remove storage prj:number_id_$(command) Owner
