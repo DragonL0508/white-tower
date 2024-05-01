@@ -1,5 +1,6 @@
 execute at @s run function hostile:hostile/1_boss/ability/2/summon_teleporter
-tp @s ~ ~ ~
+execute at @e[tag=boss_tp_mark] run tp @s ~ ~ ~
+kill @e[tag=boss_tp_mark]
 execute at @s run function hostile:hostile/1_boss/ability/2/summon_teleporter
 
 scoreboard players add @s tp_counts 1
