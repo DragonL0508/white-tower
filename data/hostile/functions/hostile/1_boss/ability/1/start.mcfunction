@@ -4,4 +4,4 @@ scoreboard players set @s ASSpeed -15
 function hostile:entity_set_speed
 data modify entity @s Motion[1] set value 0.5
 
-function cb:schedule {ticks:16,selector:"@s",command:"function hostile:hostile/1_boss/ability/1/fly/start"}
+function cb:schedule {ticks:20,selector:"@s",command:"function hostile:hostile/1_boss/ability/1/fly/start"}
