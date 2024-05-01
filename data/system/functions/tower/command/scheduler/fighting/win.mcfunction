@@ -19,6 +19,7 @@ $function system:tower/floors/$(floor)/end
 
 #clear stuffs
 function hostile:remove {target:"@e[team=hostile]"}
+kill @e[tag=clear]
 
 #commands
 scoreboard players set state tower 3

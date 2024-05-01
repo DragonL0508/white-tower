@@ -15,5 +15,6 @@ scoreboard players reset state tower
 team join prepared @a[team=intower]
 function hostile:remove {target:"@e[team=hostile]"}
 kill @e[type=item]
+kill @e[tag=clear]
 schedule clear system:tower/command/scheduler/fighting/schedule
 schedule clear system:tower/command/waves/wave_cd
