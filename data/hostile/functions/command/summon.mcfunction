@@ -1,5 +1,5 @@
 #By DragonL
-$data merge storage hostile:$(id) {id:$(id),name:$(name),health:$(health),atk:$(atk),speed:$(speed),kb:$(kb),ability_counts:$(ability_counts),ability_cd:$(ability_cd),isBoss:$(isBoss),bossbar_text:"$(bossbar_text)"}
+$data merge storage hostile:$(id) {id:$(id),name:$(name),health:$(health),atk:$(atk),speed:$(speed),kb:$(kb),ability_counts:$(ability_counts),ability_cd:$(ability_cd),isBoss:$(isBoss),bossbar_text:"$(bossbar_text)",silent:1b}
 
 $summon $(type) ~ ~ ~ {PortalCooldown:$(health),Tags:["this"],Team:hostile,CustomName:'$(name)',HandDropChances:[0.0f,0.0f],ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],AngerTime:999999,Attributes:[{Name:generic.follow_range,Base:999}]}
 execute as @e[tag=this,team=hostile] at @s run data modify entity @s AngryAt set from entity @p[gamemode=adventure] UUID
