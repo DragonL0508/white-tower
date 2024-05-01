@@ -1,0 +1,1 @@
+execute as @e[type=marker,tag=boss_teleporter] at @s run function system:tower/floors/10/boss/teleporter

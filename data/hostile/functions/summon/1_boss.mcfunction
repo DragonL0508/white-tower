@@ -36,7 +36,7 @@ bossbar set boss_health style progress
 
 #details
     #mob type
-    data merge storage hostile:this {type:"minecraft:zombie"}
+    data merge storage hostile:this {type:"minecraft:drowned"}
 
     #head
     data merge storage hostile:this {head:"player_head{SkullOwner:{Id:[I;441832940,1921401629,-2017914435,1720721081],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjdjMTc4NjVjMjc5MzRmOGM4ZWM2YzYyN2UxZmUyZDk5Zjc4M2VjOGFlNDE0Y2EyZDRmZDM2NDBhN2YzYyJ9fX0=\"}]}}}"}

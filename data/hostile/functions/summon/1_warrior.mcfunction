@@ -37,7 +37,7 @@ bossbar set boss_health style progress
 
 #details
     #mob type
-    data merge storage hostile:this {type:"minecraft:zombie"}
+    data merge storage hostile:this {type:"minecraft:drowned"}
 
     #head
     data merge storage hostile:this {head:"leather_helmet{display:{color:16777215}}"}

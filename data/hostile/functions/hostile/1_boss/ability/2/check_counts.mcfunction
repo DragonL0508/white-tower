@@ -1,0 +1,1 @@
+execute if score @s tp_counts matches 3 as @e[tag=boss_teleporter] at @s run function hostile:hostile/1_boss/ability/2/teleporter_move
