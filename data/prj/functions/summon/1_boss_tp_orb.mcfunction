@@ -5,7 +5,7 @@ data merge storage prj:this {id:"1_boss_tp_orb"}
 data merge storage prj:this {display_name:"札爾修斯"}
 
 #set speed (blocks per tick)
-data merge storage prj:this {speed:0.5}
+data merge storage prj:this {speed:0.6}
 
 #set life time (tick)
 data merge storage prj:this {lifetime:999}
