@@ -20,4 +20,4 @@ particle minecraft:instant_effect ^0.7 ^ ^0.6 0 0 0 0 1
 particle minecraft:instant_effect ^-0.7 ^ ^0.6 0 0 0 0 1
 
 #bounce
-execute unless block ^ ^ ^0.3 #system:nothing run function prj:projectiles/1_miniboss_sweep/bounce/trigger
+execute unless block ^ ^ ^0.5 #system:nothing run function prj:projectiles/1_miniboss_sweep/bounce/trigger
