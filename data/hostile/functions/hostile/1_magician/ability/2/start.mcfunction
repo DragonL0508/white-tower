@@ -1,9 +1,7 @@
-playsound entity.fox.teleport master @a[team=intower] ~ ~ ~ 2 1 1
-playsound entity.evoker.cast_spell master @a[team=intower] ~ ~ ~ 2 1.5 1
-particle flash ~ ~1 ~ 0 0 0 0 1 force
+function hostile:hostile/1_magician/ability/2/draw_circle
 
-tp @s @e[type=marker,tag=mob_spawn_spot,sort=furthest,limit=1]
-
-playsound entity.fox.teleport master @a[team=intower] ~ ~ ~ 2 1 1
-playsound entity.evoker.cast_spell master @a[team=intower] ~ ~ ~ 2 1.5 1
-particle flash ~ ~1 ~ 0 0 0 0 1 force
+tag @s add jump
+scoreboard players set @s ASSpeed -10
+function hostile:entity_set_speed
+data merge entity @s {Motion:[0.0,0.35,0.0]}
+function cb:schedule {ticks:10,selector:"@s",command:"tag @s remove jump"}
