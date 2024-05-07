@@ -10,6 +10,6 @@ execute if score @s damage2 matches 1.. unless score @s invincible matches 0 anc
 
 
 #自訂傷害 / 傷害顯示 (for 一般怪物) / 怪物特殊技能
-execute if score @s invincible matches 0 run function hp_system:type/work/tick_worker/damage_and_hp_bar_system
+execute if score @s invincible matches 0 unless entity @s[type=player] run function hp_system:type/work/tick_worker/damage_and_hp_bar_system
 
 
