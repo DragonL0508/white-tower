@@ -21,30 +21,20 @@ execute as @e[type=!#hp_system:nothing,tag=Fan.target] run scoreboard players op
 
 #set damage value if it is damage multiple 10
 scoreboard objectives add Fan.damageType dummy "傷害類別.暫存"
-#multiple 10
-scoreboard players set 10 Fan.damageType 10
 #check type
 $scoreboard players set $(type) Fan.damageType 1
-#amount
-execute store result score amount Fan.damageType if entity @e[type=!#hp_system:nothing,tag=Fan.target]
-$scoreboard players set #tmp Fan.damageType $(damage)
-scoreboard players operation #tmp Fan.damageType *= amount Fan.damageType
 #damage
-$execute if score damage Fan.damageType matches 1 run scoreboard players add @e[type=!#hp_system:nothing,tag=Fan.target] $(type) $(damage)
-#add final damage score
-execute if score damage Fan.damageType matches 1 run scoreboard players operation @s Fan.FinalDamage += #tmp Fan.damageType
-execute if score damage Fan.damageType matches 1 as @e[type=!#hp_system:nothing,tag=Fan.target] run scoreboard players operation @s damage *= 10 Fan.damageType
+$execute if score damage Fan.damageType matches 1 as @e[type=!#hp_system:nothing,tag=Fan.target] run damage @s $(damage) player_attack by @p[tag=Fan.attacker]
 #damage2
 $execute if score damage2 Fan.damageType matches 1 run scoreboard players add @e[type=!#hp_system:nothing,tag=Fan.target] $(type) $(damage)
-#add final damage2 score
-execute if score damage2 Fan.damageType matches 1 run scoreboard players operation @s Fan.FinalDamage2 += #tmp Fan.damageType
+
 #reset scoreboard and remove object
 scoreboard players reset * Fan.damageType
 scoreboard objectives remove Fan.damageType
 
 
 #damage effect
-execute as @e[type=!#hp_system:nothing,tag=Fan.target] run damage @s 0.000000001 out_of_world
+execute as @e[type=!#hp_system:nothing,tag=Fan.target] run damage @s 0.000000001 out_of_world by @p[tag=Fan.attacker]
 
 
 

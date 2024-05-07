@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:camel",
+    "minecraft:elder_guardian",
+    "minecraft:enderman",
+    "minecraft:ghast",
+    "minecraft:hoglin",
+    "minecraft:horse",
+    "minecraft:iron_golem",
+    "minecraft:ravager",
+    "minecraft:skeleton_horse",
+    "minecraft:warden",
+    "minecraft:wither_skeleton",
+    "minecraft:wither",
+    "minecraft:zoglin"
+	]
+}

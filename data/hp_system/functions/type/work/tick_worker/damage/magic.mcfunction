@@ -6,11 +6,12 @@ execute anchored eyes run function hp_system:type/work/tick_worker/damage/show_m
 
 scoreboard players operation @s hp -= @s damage2
 
+#傷害統計
+scoreboard players operation @p[tag=entityid.attacker] Fan.FinalDamage += @s damage2
 
 #hp_bar live time
 scoreboard players set @s[tag=!hp_bar_showed] hp_bar_timer 100
-execute if entity @s[tag=!hp_bar_showed] store result storage hp_system:hp_bar id int 1 run scoreboard players get @s id
-execute if entity @s[tag=!hp_bar_showed] run function hp_system:type/work/tick_worker/hp_bar/summon_normal with storage hp_system:hp_bar
+execute if entity @s[tag=!hp_bar_showed] run function hp_system:type/work/tick_worker/hp_bar/summon_normal
 tag @s[tag=!hp_bar_showed] add hp_bar_showed
 
 
