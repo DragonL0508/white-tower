@@ -4,6 +4,7 @@
         "spell:load",
         "endsky_npc:load",
         "find_looking:internal/load",
+        "entityid:load",
         "hp_system:type/new",
         "enemy:load",
         "hostile:load",
