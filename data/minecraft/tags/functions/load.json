@@ -9,6 +9,7 @@
         "enemy:load",
         "hostile:load",
         "cb:internal/load",
-        "prj:load"
+        "prj:load",
+        "rs:load"
     ]
 }

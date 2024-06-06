@@ -7,6 +7,7 @@
         "enemy:tick",
         "hostile:tick",
         "cb:internal/tick",
-        "prj:tick"
+        "prj:tick",
+        "rs:tick"
     ]
 }
