@@ -1,5 +1,5 @@
 #is level end?
-execute if score wave tower = floor.waves tower run function system:tower/command/scheduler/fighting/win
+execute if score wave tower >= floor.waves tower run function system:tower/command/scheduler/fighting/win
 
 #new wave
 bossbar set timelimit max 5
