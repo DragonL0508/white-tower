@@ -1,4 +1,5 @@
 #The function will be triggered upon the mob dead.
+say hi
 
 #Kill all vex with same Group ID
 tag @s add me
