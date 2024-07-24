@@ -1,0 +1,1 @@
+execute as @e[type=interaction, tag=meditation.LUC] at @s run function system:players/meditation/particles/luc
