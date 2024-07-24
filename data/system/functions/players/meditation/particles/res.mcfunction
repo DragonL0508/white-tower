@@ -1,0 +1,1 @@
+particle dripping_obsidian_tear ~ ~10 ~0.5 0.25 0.25 0.25 0 3 force
