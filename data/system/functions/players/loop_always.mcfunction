@@ -32,21 +32,6 @@
 #spell loop
     function spell:loop
 
-#shield system
-    execute if entity @s[tag=shield.enable] run function system:players/shield/animation with storage shield.animation.angle
-    #recover
-    execute if entity @s[tag=!shield.enable] if score @s player.shield < @s player.maxshield run function system:players/shield/recover
-
-#meditation
-    #store pitch data into scoreboard
-    execute store result score @s player.pitch run data get entity @s Rotation[1]
-    #checker
-    execute if entity @s[team=player,tag=!in_meditation] if score @s player.pitch matches 80.. if score @s sneak matches 1.. run scoreboard players add @s meditation.timer 1
-    execute unless score @s player.pitch matches 80.. run scoreboard players reset @s meditation.timer
-    execute unless score @s sneak matches 1.. run scoreboard players reset @s meditation.timer
-    
-    execute if score @s meditation.timer matches 60.. run function system:players/meditation/start
-
 #get money
     execute if data entity @s Inventory[{id:"minecraft:gray_dye"}] run function system:players/money/getmoney
 
@@ -57,9 +42,6 @@
     effect give @s hunger infinite 255 true
     execute if score @s[tag=!can_not_sprint] player.hunger matches ..7 run effect give @s saturation 1 0 true
     execute if score @s[tag=can_not_sprint] player.hunger matches ..5 run effect give @s saturation 1 0 true
-
-#player dead event
-    execute if score @s dead_event matches 1.. run function system:players/dead
 
 #damage storage
     scoreboard players operation @s player.damage.total += @s Fan.FinalDamage

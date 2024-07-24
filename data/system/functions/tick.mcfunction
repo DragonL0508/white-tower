@@ -2,7 +2,9 @@
     #first join
     execute as @a[tag=!joined] at @s run function system:players/first_join
     #make all players execute
-    execute as @a at @s run function system:players/loop
+    execute as @a at @s run function system:players/loop_always
+    execute as @a[team=player] at @s run function system:players/loop_player
+    execute as @a[team=intower] at @s run function system:players/loop_intower
 
 #tower loop
     function system:tower/tick
