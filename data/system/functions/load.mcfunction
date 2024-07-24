@@ -32,6 +32,7 @@ scoreboard objectives add skill_points dummy {"text": "技能點數量"}
 scoreboard objectives add actionbar_type dummy {"text": "玩家actionbar樣式"}
 scoreboard objectives add player.pitch dummy
 scoreboard objectives add meditation.id dummy
+scoreboard objectives add meditation.timer dummy
 
 scoreboard objectives add Hpots.real dummy
 scoreboard objectives add Mpots.real dummy

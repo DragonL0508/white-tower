@@ -41,7 +41,11 @@
     #store pitch data into scoreboard
     execute store result score @s player.pitch run data get entity @s Rotation[1]
     #checker
-    execute if entity @s[team=player,tag=!in_meditation] if score @s player.pitch matches 80.. if score @s sneak matches 1.. run function system:players/meditation/start
+    execute if entity @s[team=player,tag=!in_meditation] if score @s player.pitch matches 80.. if score @s sneak matches 1.. run scoreboard players add @s meditation.timer 1
+    execute unless score @s player.pitch matches 80.. run scoreboard players reset @s meditation.timer
+    execute unless score @s sneak matches 1.. run scoreboard players reset @s meditation.timer
+    
+    execute if score @s meditation.timer matches 60.. run function system:players/meditation/start
 
 #get money
     execute if data entity @s Inventory[{id:"minecraft:gray_dye"}] run function system:players/money/getmoney

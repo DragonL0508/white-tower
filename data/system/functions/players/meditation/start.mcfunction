@@ -21,3 +21,4 @@ function cb:schedule {ticks:10,selector:"@s",command:"tp @s 1019 -48 1438 180 90
 function cb:schedule {ticks:10,selector:"@s",command:"scoreboard players set @s actionbar_type 5"}
 
 tag @s add in_meditation
+scoreboard players reset @s meditation.timer
