@@ -1,1 +1,1 @@
-particle effect ~ ~7 ~ 3 3 3 0 1 force
+particle instant_effect ~ ~3.5 ~ 3 3 3 0 1 force
