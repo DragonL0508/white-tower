@@ -25,8 +25,8 @@
 #map particles
     execute as @e[type=marker,tag=village.particle.chimney] at @s run particle campfire_cosy_smoke ~ ~ ~ 0 10 0 0.008 0 force
 
-    #meditation
-    execute if entity @a[tag=in_meditation] run function system:players/meditation/particles
+#meditation
+    execute if entity @a[tag=in_meditation] run function system:players/meditation/loop
 
 #effects those always give players
     #effect give @a saturation infinite 100 true
