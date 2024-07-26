@@ -5,3 +5,4 @@ execute as @e[type=interaction, tag=meditation.INT] at @s run function system:pl
 
 #something else
 execute as @e[type=interaction, tag=meditation.interaction] at @s run function system:players/meditation/info/if_player_near_by
+execute as @e[type=marker, tag=meditation.info] at @s run function system:players/meditation/info/text_display
