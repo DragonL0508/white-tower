@@ -10,7 +10,7 @@ tellraw @s {"text": "       §7當前屬性:\n           §a+0.0 §7近戰攻擊
 tellraw @s {"text": ""}
 tellraw @s {"text": "       §7下一階段:\n           §a+0.5 §7近戰攻擊傷害"}
 tellraw @s {"text": ""}
-tellraw @s [{"text": "      §7你有 "},{"score": {"name": "@s", "objective": "skill_points"}, "color": "yellow"}, {"text": " §7點技能點   "}, {"text": "§a§l[升級]"}]
+tellraw @s [{"text": "       §7你有 "},{"score": {"name": "@s", "objective": "skill_points"}, "color": "yellow"}, {"text": " §7點技能點   "}, {"text": "§a§l[升級]"}]
 
 tellraw @s {"text": "-----------------------------------", "color": "gray", "strikethrough": true}
 tellraw @s {"text": ""}
