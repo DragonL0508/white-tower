@@ -4,3 +4,7 @@ execute as @e[type=marker,tag=meditation.info,distance=..5] at @s \
 execute if entity @s[tag=meditation.STR] \
     as @e[type=marker,tag=meditation.info,distance=..5] at @s \
     run function system:players/meditation/info/shown_effects/str
+
+execute if entity @s[tag=meditation.HP] \
+    as @e[type=marker,tag=meditation.info,distance=..5] at @s \
+    run function system:players/meditation/info/shown_effects/hp

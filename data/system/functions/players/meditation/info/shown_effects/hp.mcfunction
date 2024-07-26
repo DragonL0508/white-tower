@@ -1,0 +1,1 @@
+summon allay ~ ~-2 ~ {Team:"color.red"}

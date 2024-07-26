@@ -1,4 +1,3 @@
 #for macro, do not edit this!
 tp @s ~ -100 ~
-scoreboard players set @s hp 0
-kill @s
+function hp_system:type/work/tick_worker/hp_bar/same_id_kill
