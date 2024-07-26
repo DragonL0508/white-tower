@@ -92,6 +92,9 @@ team modify hostile color red
 team modify hostile collisionRule pushOwnTeam
 team modify hostile friendlyFire false
 
+team add color.red
+team modify color.red color red
+
 #gamerules
 difficulty hard
 
