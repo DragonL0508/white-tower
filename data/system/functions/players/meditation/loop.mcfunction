@@ -9,5 +9,5 @@ execute as @e[type=interaction, tag=meditation.interaction] at @s run function s
 execute as @e[type=marker, tag=meditation.info] at @s run function system:players/meditation/info/text_display
 
 #right clicked
-execute as @e[type=interaction, tag=meditation.STR] on target run say hi
+execute as @e[type=interaction, tag=meditation.STR] on target run function system:players/meditation/info/message/str
 execute as @e[type=interaction, tag=meditation.interaction] run data remove entity @s interaction
