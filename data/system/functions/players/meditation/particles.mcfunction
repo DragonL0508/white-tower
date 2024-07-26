@@ -2,3 +2,6 @@ execute as @e[type=interaction, tag=meditation.LUC] at @s run function system:pl
 execute as @e[type=interaction, tag=meditation.RES] at @s run function system:players/meditation/particles/res
 execute as @e[type=interaction, tag=meditation.STR] at @s run function system:players/meditation/particles/str
 execute as @e[type=interaction, tag=meditation.INT] at @s run function system:players/meditation/particles/int
+
+#something else
+execute as @e[type=interaction, tag=meditation.interaction] at @s run function system:players/meditation/info/if_player_near_by
