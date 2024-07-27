@@ -1,4 +1,4 @@
-execute unless data storage meditation:message this_att_strings run return 0
+execute unless data storage meditation:message this_att_strings[0] run return 0
 
 tellraw @s [{"text": "          "},{"storage":"meditation:message","nbt":"this_att_strings[0]"}]
 
