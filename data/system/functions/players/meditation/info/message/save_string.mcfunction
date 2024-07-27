@@ -1,1 +1,1 @@
-data modify storage meditation:message this_att_strings append value "$(des1)$(value)$(des2)"
+$data modify storage meditation:message this_att_strings append value "$(des1)$(value)$(des2)"
