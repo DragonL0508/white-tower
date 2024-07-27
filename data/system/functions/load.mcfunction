@@ -111,3 +111,6 @@ gamerule doWeatherCycle false
 gamerule keepInventory true
 gamerule universalAnger true
 gamerule naturalRegeneration false
+
+#attribute configs
+function system:players/attribute/str_config
