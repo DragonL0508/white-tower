@@ -4,7 +4,6 @@
         "system:tick",
         "endsky_npc:tick",
         "entityid:tick",
-        "enemy:tick",
         "hostile:tick",
         "cb:internal/tick",
         "prj:tick",
