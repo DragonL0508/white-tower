@@ -1,5 +1,5 @@
 #time limit
-data merge storage tower:floor.data {timelimit:480}
+data merge storage tower:floor.data {timelimit:300}
 
 #set waves
 data merge storage tower:floor.data {waves:3}
@@ -9,7 +9,7 @@ data merge storage tower:floor.data {waves:3}
 data merge storage tower:floor.data {type:3}
 
 #teleporter tag
-data merge storage tower:floor.data {tp:"1-10.puzzle"}
+data merge storage tower:floor.data {tp:"1-10.normal"}
 
 #leave teleporter tag
 data merge storage tower:floor.data {leave:"1-10.leave"}
@@ -18,7 +18,7 @@ data merge storage tower:floor.data {leave:"1-10.leave"}
 data merge storage tower:floor.data {block_state:"Name:\"minecraft:quartz_pillar\",Properties:{axis:\"y\"}"}
 
 #mob spawn tag
-data merge storage tower:floor.data {mob_spawn:"1-10.puzzle.mob"}
+data merge storage tower:floor.data {mob_spawn:"1-10.normal.mob"}
 
 #boss spawn tag (ignore this if this is not a boss level)
 data merge storage tower:floor.data {boss_spawn:"5.boss"}
@@ -30,6 +30,3 @@ data merge storage tower:floor.data {xp_rewards:100}
 #-----
 function system:tower/floor_start with storage tower:floor.data
 #-----
-
-#everything you want to execute ->
-clone 3015 56 2799 2975 80 2759 2975 28 2759

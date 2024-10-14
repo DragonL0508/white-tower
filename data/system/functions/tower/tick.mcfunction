@@ -5,7 +5,7 @@ execute if score state tower matches 2 run function system:tower/command/fightin
 execute if score state tower matches 3 run function system:tower/command/game_end
 execute if score state tower matches 1.. run function system:tower/library_tick with storage tower:floor.data
 
-#tower entry & getout
+#tower entry & leave
 execute as @e[type=marker,tag=entry] at @s run function system:tower/entry_portal
 
 #show timelimit bossbar
