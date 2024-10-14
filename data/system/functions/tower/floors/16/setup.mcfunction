@@ -9,10 +9,10 @@ data merge storage tower:floor.data {waves:3}
 data merge storage tower:floor.data {type:3}
 
 #teleporter tag
-data merge storage tower:floor.data {tp:"1-10.normal"}
+data merge storage tower:floor.data {tp:"11-20.puzzle"}
 
 #leave teleporter tag
-data merge storage tower:floor.data {leave:"1-10.leave"}
+data merge storage tower:floor.data {leave:"11-20.leave"}
 
 #leave door's block state
 data merge storage tower:floor.data {block_state:"Name:\"minecraft:quartz_pillar\",Properties:{axis:\"y\"}"}
