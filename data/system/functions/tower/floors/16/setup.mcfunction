@@ -15,7 +15,7 @@ data merge storage tower:floor.data {tp:"11-20.puzzle"}
 data merge storage tower:floor.data {leave:"11-20.leave"}
 
 #leave door's block state
-data merge storage tower:floor.data {block_state:"Name:\"minecraft:quartz_pillar\",Properties:{axis:\"y\"}"}
+data merge storage tower:floor.data {block_state:"Name:\"minecraft:deepslate_tiles\""}
 
 #mob spawn tag
 data merge storage tower:floor.data {mob_spawn:"1-10.normal.mob"}
