@@ -1,4 +1,4 @@
-execute as @a at @s if block ~ ~-0.05 ~ red_concrete run effect give @s instant_damage 1 2 true
+execute as @a at @s if block ~ ~-0.05 ~ red_concrete run damage @s 10 magic
 execute as @a at @s if block ~ ~-0.05 ~ red_concrete run playsound entity.enderman.teleport master @a ~ ~ ~ 1
 execute as @a at @s if block ~ ~-0.05 ~ red_concrete run particle minecraft:portal ~ ~1 ~ 0.2 0.5 0.2 0.05 50 force @a
 execute as @a at @s if block ~ ~-0.05 ~ red_concrete run tp @s @e[type=marker,tag=floor_teleporter,limit=1]
